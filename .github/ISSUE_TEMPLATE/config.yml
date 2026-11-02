@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Guide de contribution
+    url: https://github.com/HossLaRue/awesome-droit-francais/blob/main/CONTRIBUTING.md
+    about: Critères d'inclusion et procédure pour proposer une ressource par pull request.

@@ -1,0 +1,84 @@
+name: Proposer une ressource
+description: Suggérer l'ajout d'une ressource utile au droit français.
+title: "[Proposition] "
+labels: ["proposition"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Merci pour votre proposition. Avant d'envoyer le formulaire, vérifiez que la ressource respecte les [critères d'inclusion](../blob/main/CONTRIBUTING.md#critères-dinclusion) et qu'elle ne figure pas déjà dans la liste.
+  - type: input
+    id: nom
+    attributes:
+      label: Nom de la ressource
+      placeholder: "Exemple : API Judilibre"
+    validations:
+      required: true
+  - type: input
+    id: url
+    attributes:
+      label: Adresse (URL en HTTPS)
+      placeholder: "https://"
+    validations:
+      required: true
+  - type: dropdown
+    id: categorie
+    attributes:
+      label: Catégorie proposée
+      options:
+        - Sources officielles et API publiques
+        - Données juridiques réutilisables
+        - Bibliothèques et clients d'API
+        - IA juridique
+        - Modèles de documents et automatisation
+        - Calculateurs et simulateurs
+        - Outils publics et droit codé
+        - Apprendre
+        - Communautés, événements et veille
+        - Listes sœurs
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Une phrase orientée usage, avec vos propres mots, sans superlatif ni émoji (200 caractères au maximum).
+    validations:
+      required: true
+  - type: checkboxes
+    id: etiquettes
+    attributes:
+      label: Étiquettes applicables
+      options:
+        - label: Gratuit
+        - label: Open source
+        - label: Inscription requise
+        - label: Pensée pour l'IA (MCP, jeu de données, modèle, API pour agents)
+        - label: Bibliothèque Python
+        - label: Bibliothèque JavaScript
+        - label: Freemium (offre commerciale avec une partie gratuite)
+  - type: input
+    id: licence
+    attributes:
+      label: Licence
+      placeholder: "Exemple : Licence Ouverte 2.0, MIT, conditions du site"
+  - type: input
+    id: depot
+    attributes:
+      label: Dépôt GitHub (facultatif)
+      placeholder: "proprietaire/depot"
+  - type: checkboxes
+    id: confirmations
+    attributes:
+      label: Confirmations
+      options:
+        - label: J'ai vérifié que le lien fonctionne et que la description correspond à ce que fait la ressource.
+          required: true
+        - label: La ressource n'est ni piratée ni conçue pour contourner un paywall.
+          required: true
+        - label: Si je suis lié à cette ressource (auteur, salarié, partenaire), je l'indique ci-dessous.
+  - type: textarea
+    id: liens-interet
+    attributes:
+      label: Lien d'intérêt éventuel
+      description: Indiquez si vous êtes l'auteur de la ressource ou lié à son éditeur.

@@ -1,0 +1,31 @@
+name: Signaler un problème
+description: Lien mort, description inexacte, licence erronée ou projet abandonné.
+title: "[Problème] "
+labels: ["probleme"]
+body:
+  - type: input
+    id: ressource
+    attributes:
+      label: Ressource concernée
+      description: Nom de l'entrée telle qu'elle apparaît dans le README.
+    validations:
+      required: true
+  - type: dropdown
+    id: nature
+    attributes:
+      label: Nature du problème
+      options:
+        - Lien mort ou redirection inattendue
+        - Description inexacte ou trompeuse
+        - Licence ou étiquette erronée
+        - Projet abandonné ou archivé
+        - Autre
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: Détails
+      description: Décrivez ce que vous avez constaté et, si possible, la correction proposée avec une source.
+    validations:
+      required: true
