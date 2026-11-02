@@ -254,15 +254,15 @@ ressources:
     verifie_le: 2026-11-02
 
   codes-markdown:
-    nom: "Codes en Markdown (lemyst)"
-    url: "https://github.com/lemyst/codes"
+    nom: "Codes en Markdown (LeMyst)"
+    url: "https://github.com/LeMyst/Codes"
     categorie: donnees
     sous_categorie: null
     description: "Dix-huit codes rangés en un fichier Markdown par article, mis à jour par commits réguliers : l'historique Git montre chaque modification."
     etiquettes: [gratuit]
     licence: "Non précisée (données DILA sous Licence Ouverte)"
     type: donnees
-    depot_github: "lemyst/codes"
+    depot_github: "LeMyst/Codes"
     statut: actif
     verifie_le: 2026-11-02
 
@@ -380,14 +380,14 @@ ressources:
 
   droit-francais-mcp:
     nom: "DroitFrancaisMCP"
-    url: "https://github.com/jmtanguy/DroitFrancaisMCP"
+    url: "https://github.com/jmtanguy/droit-francais-mcp"
     categorie: ia
     sous_categorie: ia-mcp
     description: "Serveur MCP à installer soi-même qui interroge Légifrance et Judilibre avec vos propres identifiants PISTE."
     etiquettes: [gratuit, open-source, inscription, ia, python]
     licence: "MIT"
     type: mcp
-    depot_github: "jmtanguy/DroitFrancaisMCP"
+    depot_github: "jmtanguy/droit-francais-mcp"
     statut: actif
     verifie_le: 2026-11-02
 
@@ -482,42 +482,29 @@ ressources:
     statut: actif
     verifie_le: 2026-11-02
 
-  label-cour-de-cassation:
-    nom: "Label"
-    url: "https://github.com/Cour-de-cassation/label"
-    categorie: ia
-    sous_categorie: ia-anonymisation
-    description: "Logiciel de la Cour de cassation pour relire et corriger les décisions pré-annotées par un algorithme avant leur publication pseudonymisée."
-    etiquettes: [gratuit, open-source]
-    licence: "MIT"
-    type: outil
-    depot_github: "Cour-de-cassation/label"
-    statut: actif
-    verifie_le: 2026-11-02
-
   presidio:
     nom: "Presidio"
-    url: "https://github.com/microsoft/presidio"
+    url: "https://github.com/data-privacy-stack/presidio"
     categorie: ia
     sous_categorie: ia-anonymisation
     description: "Boîte à outils de détection et de masquage de données personnelles ; prévue pour l'anglais par défaut, elle s'adapte au français avec un modèle linguistique adéquat."
     etiquettes: [gratuit, open-source, python]
     licence: "MIT"
     type: bibliotheque
-    depot_github: "microsoft/presidio"
+    depot_github: "data-privacy-stack/presidio"
     statut: actif
     verifie_le: 2026-11-02
 
-  guide-pseudonymisation:
-    nom: "Guide de la pseudonymisation (Etalab)"
-    url: "https://guides.etalab.gouv.fr/pseudonymisation/"
+  eds-pseudo:
+    nom: "EDS-Pseudo"
+    url: "https://github.com/aphp/eds-pseudo"
     categorie: ia
     sous_categorie: ia-anonymisation
-    description: "Explique pourquoi et comment pseudonymiser des documents textuels, en prenant l'exemple des décisions de justice et d'une méthode fondée sur l'IA."
-    etiquettes: [gratuit]
-    licence: "Licence Ouverte 2.0"
-    type: formation
-    depot_github: "etalab/guides.etalab.gouv.fr"
+    description: "Modèle de l'AP-HP qui repère noms, adresses, dates ou numéros dans des textes en français ; conçu pour des documents médicaux, il sert de base pour pseudonymiser."
+    etiquettes: [gratuit, open-source, ia, python]
+    licence: "BSD 3-Clause"
+    type: bibliotheque
+    depot_github: "aphp/eds-pseudo"
     statut: actif
     verifie_le: 2026-11-02
 
@@ -704,14 +691,14 @@ ressources:
 
   publicodes:
     nom: "Publicodes"
-    url: "https://github.com/betagouv/publicodes"
+    url: "https://github.com/publicodes/publicodes"
     categorie: droit-code
     sous_categorie: null
     description: "Langage déclaratif pour modéliser des règles de calcul (cotisations, aides) qui produit automatiquement l'explication de chaque résultat."
     etiquettes: [gratuit, open-source, javascript]
     licence: "MIT"
     type: bibliotheque
-    depot_github: "betagouv/publicodes"
+    depot_github: "publicodes/publicodes"
     statut: actif
     verifie_le: 2026-11-02
 
@@ -936,5 +923,31 @@ ressources:
     licence: "MIT"
     type: outil
     depot_github: "etalab-ia/pseudo_app"
+    statut: non-maintenu
+    verifie_le: 2026-11-02
+
+  label-cour-de-cassation:
+    nom: "Label"
+    url: "https://github.com/Cour-de-cassation/label"
+    categorie: archives
+    sous_categorie: null
+    description: "Logiciel de la Cour de cassation pour relire les décisions pré-annotées avant publication pseudonymisée. Dépôt archivé par ses auteurs (dernier commit en septembre 2025)."
+    etiquettes: [gratuit, open-source, non-maintenu]
+    licence: "MIT"
+    type: outil
+    depot_github: "Cour-de-cassation/label"
+    statut: archive
+    verifie_le: 2026-11-02
+
+  guide-pseudonymisation:
+    nom: "Guide de la pseudonymisation (Etalab)"
+    url: "https://github.com/etalab/guides.etalab.gouv.fr/tree/master/pseudonymisation"
+    categorie: archives
+    sous_categorie: null
+    description: "Guide d'Etalab sur la pseudonymisation de documents textuels, illustré par les décisions de justice. Le site ne répond plus ; le lien mène aux sources du guide. Dernier commit en mai 2024."
+    etiquettes: [gratuit, non-maintenu]
+    licence: "Licence Ouverte 2.0"
+    type: formation
+    depot_github: "etalab/guides.etalab.gouv.fr"
     statut: non-maintenu
     verifie_le: 2026-11-02

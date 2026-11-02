@@ -80,7 +80,13 @@ def verifier(donnees: dict, jeton: str | None, aujourd_hui: dt.date) -> tuple[li
 
         nom_reel = infos.get("full_name", depot)
         if nom_reel.lower() != depot.lower():
-            anomalies.append(f"`{ident}` : le dépôt `{depot}` a été déplacé vers `{nom_reel}`.")
+            correction = f'depot_github: "{nom_reel}"'
+            if res.get("url", "").rstrip("/").lower() == f"https://github.com/{depot}".lower():
+                correction += f' et url: "https://github.com/{nom_reel}"'
+            anomalies.append(
+                f"`{ident}` : le dépôt `{depot}` a été déplacé vers `{nom_reel}` ; "
+                f"dans data/ressources.yml, remplacez par {correction}."
+            )
 
         dernier = date_dernier_commit(nom_reel, infos.get("default_branch", "main"), jeton)
         age = (aujourd_hui - dernier).days if dernier else None

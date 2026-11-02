@@ -20,17 +20,12 @@ Dernière mise à jour : 2026-11-02.
 | LegalBench.PT, LEXam, GreekBarBench | arXiv et Hugging Face | Sujet hors périmètre : ces benchmarks ne comportent pas de données en français. |
 | Awesome Artificial Intelligence Regulation (ethicalml) | `https://github.com/ethicalml/awesome-artificial-intelligence-regulation` | Dépôt actif (licence MIT), mais non retenu pour ne pas multiplier les listes sur la régulation de l'IA. Candidat possible pour la section « Listes sœurs ». |
 
-## Contrôle HTTP à refaire
+## Contrôle HTTP des liens
 
-Pendant la session de création, la politique réseau de l'environnement bloquait l'accès direct à la plupart des sites hors GitHub, Hugging Face, PyPI et npm. Les ressources ci-dessous sont listées parce que leur adresse et leur contenu ont été confirmés par recherche web (pages indexées du site lui-même), sans requête HTTP directe. Le workflow hebdomadaire `liens.yml` (lychee) fera ce contrôle à chaque exécution.
-
-- legifrance.gouv.fr, data.gouv.fr, opendata.justice-administrative.fr, echanges.dila.gouv.fr, conseil-constitutionnel.fr, service-public.fr
-- eur-lex.europa.eu, hudoc.echr.coe.int
-- justicelibre.org, code.travail.gouv.fr, justice.fr, inc-conso.fr, simonnetavocat.fr, mon-entreprise.urssaf.fr
-- catala-lang.org, book.catala-lang.org, docassemble.org, accordproject.org, guides.etalab.gouv.fr
-- cs50.harvard.edu, fun-mooc.fr, openlaw.fr, village-justice.com, numerique.gouv.fr
+Pendant la session de création, la politique réseau de l'environnement bloquait l'accès direct à la plupart des sites hors GitHub, Hugging Face, PyPI et npm : ces liens n'avaient été confirmés que par recherche web. La première exécution du workflow `liens.yml` (2026-11-02) les a contrôlés directement : 88 liens sur 89 répondaient. Le seul en échec, `https://guides.etalab.gouv.fr/pseudonymisation/`, pointe désormais vers les sources du guide sur GitHub, et l'entrée a rejoint les archives.
 
 ## Points de vigilance
 
 - **LegalKit** (`louisbrulenaudet/legalkit-pipeline`) : dernier commit le 2024-11-03, soit juste sous la limite de 24 mois au 2026-11-02. Sans nouvelle activité, l'entrée devra passer dans les archives dès le prochain contrôle hebdomadaire.
+- **Corrections du 2026-11-02** (premier rapport hebdomadaire) : dépôts déplacés mis à jour (`jmtanguy/droit-francais-mcp`, `data-privacy-stack/presidio`, `publicodes/publicodes`, `LeMyst/Codes`) ; Label (dépôt archivé par la Cour de cassation) et le guide Etalab (dernier commit en mai 2024) déplacés dans les archives ; EDS-Pseudo (AP-HP) ajouté à la sous-section anonymisation.
 - **justicelibre** : le dépôt GitHub `Dahliyaal/justicelibre` indique que son code n'est plus à jour et que le développement continue dans un dépôt privé. Seul le service en ligne est listé, sans l'étiquette « Open source ».

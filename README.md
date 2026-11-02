@@ -81,7 +81,7 @@ Portails et API de l'État et des institutions européennes pour accéder aux te
 Extractions, dépôts Git et jeux de données prêts à l'emploi, construits à partir des données publiques.
 
 - [ArGiMi French Jurisprudence](https://huggingface.co/datasets/artefactory/Argimi-Legal-French-Jurisprudence) - \[Gratuit\] \[IA\] Décisions constitutionnelles, administratives et judiciaires découpées en segments, utiles pour construire un moteur de recherche ou un système RAG.
-- [Codes en Markdown (lemyst)](https://github.com/lemyst/codes) - \[Gratuit\] Dix-huit codes rangés en un fichier Markdown par article, mis à jour par commits réguliers : l'historique Git montre chaque modification.
+- [Codes en Markdown (LeMyst)](https://github.com/LeMyst/Codes) - \[Gratuit\] Dix-huit codes rangés en un fichier Markdown par article, mis à jour par commits réguliers : l'historique Git montre chaque modification.
 - [Jurisprudence (antoinejeannot)](https://huggingface.co/datasets/antoinejeannot/jurisprudence) - \[Gratuit\] \[Open source\] \[IA\] Plus d'un million de décisions judiciaires récupérées via Judilibre et publiées en JSONL et Parquet, pratiques pour l'analyse ou l'entraînement de modèles.
 - [LegalKit](https://github.com/louisbrulenaudet/legalkit-pipeline) - \[Gratuit\] \[Open source\] \[IA\] \[Python\] Chaîne de traitement qui publie les codes français sous forme de jeux de données Hugging Face (un jeu par code), avec un exemple de chargement groupé.
 - [Tricoteuses LEGI](https://huggingface.co/datasets/Tricoteuses/LEGI) - \[Gratuit\] Articles en vigueur de la base LEGI convertis en tableau avec leurs dates et identifiants ; le même éditeur publie aussi les bases CNIL et CAPP.
@@ -108,7 +108,7 @@ Ressources pour brancher des assistants IA sur le droit français, entraîner ou
 ### Serveurs MCP
 
 - [data.gouv.fr MCP](https://github.com/datagouv/datagouv-mcp) - \[Gratuit\] \[Open source\] \[IA\] Serveur MCP officiel qui laisse un assistant IA chercher et analyser les jeux de données de data.gouv.fr ; une instance publique fonctionne sans compte.
-- [DroitFrancaisMCP](https://github.com/jmtanguy/DroitFrancaisMCP) - \[Gratuit\] \[Open source\] \[Inscription\] \[IA\] \[Python\] Serveur MCP à installer soi-même qui interroge Légifrance et Judilibre avec vos propres identifiants PISTE.
+- [DroitFrancaisMCP](https://github.com/jmtanguy/droit-francais-mcp) - \[Gratuit\] \[Open source\] \[Inscription\] \[IA\] \[Python\] Serveur MCP à installer soi-même qui interroge Légifrance et Judilibre avec vos propres identifiants PISTE.
 - [justicelibre](https://justicelibre.org/) - \[Gratuit\] \[IA\] Serveur MCP hébergé qui interroge jurisprudence, codes et doctrine administrative issus de l'open data ; la recherche fonctionne sans compte.
 - [mcp-server-legifrance](https://github.com/pylegifrance/mcp-server-legifrance) - \[Gratuit\] \[Open source\] \[Inscription\] \[IA\] \[Python\] Serveur MCP expérimental pour rechercher lois, articles de code et jurisprudence judiciaire ; il demande une clé délivrée par lab.dassignies.law.
 
@@ -126,9 +126,8 @@ Ressources pour brancher des assistants IA sur le droit français, entraîner ou
 
 ### Anonymisation et pseudonymisation
 
-- [Guide de la pseudonymisation (Etalab)](https://guides.etalab.gouv.fr/pseudonymisation/) - \[Gratuit\] Explique pourquoi et comment pseudonymiser des documents textuels, en prenant l'exemple des décisions de justice et d'une méthode fondée sur l'IA.
-- [Label](https://github.com/Cour-de-cassation/label) - \[Gratuit\] \[Open source\] Logiciel de la Cour de cassation pour relire et corriger les décisions pré-annotées par un algorithme avant leur publication pseudonymisée.
-- [Presidio](https://github.com/microsoft/presidio) - \[Gratuit\] \[Open source\] \[Python\] Boîte à outils de détection et de masquage de données personnelles ; prévue pour l'anglais par défaut, elle s'adapte au français avec un modèle linguistique adéquat.
+- [EDS-Pseudo](https://github.com/aphp/eds-pseudo) - \[Gratuit\] \[Open source\] \[IA\] \[Python\] Modèle de l'AP-HP qui repère noms, adresses, dates ou numéros dans des textes en français ; conçu pour des documents médicaux, il sert de base pour pseudonymiser.
+- [Presidio](https://github.com/data-privacy-stack/presidio) - \[Gratuit\] \[Open source\] \[Python\] Boîte à outils de détection et de masquage de données personnelles ; prévue pour l'anglais par défaut, elle s'adapte au français avec un modèle linguistique adéquat.
 
 ## Modèles de documents et automatisation
 
@@ -157,7 +156,7 @@ Services publics numériques et langages qui traduisent des règles juridiques e
 - [Catala](https://catala-lang.org/) - \[Gratuit\] \[Open source\] Langage de programmation de l'Inria qui annote un texte de loi avec sa traduction en code, pensé pour un travail en binôme juriste et développeur.
 - [Code du travail numérique](https://code.travail.gouv.fr/) - \[Gratuit\] \[Open source\] Service public qui répond aux questions de droit du travail en tenant compte de la convention collective applicable ; son code source est ouvert.
 - [OpenFisca-France](https://github.com/openfisca/openfisca-france) - \[Gratuit\] \[Open source\] \[Python\] Modèle du système socio-fiscal français écrit pour le moteur OpenFisca ; il calcule impôts et prestations et sert notamment à simuler des réformes.
-- [Publicodes](https://github.com/betagouv/publicodes) - \[Gratuit\] \[Open source\] \[JavaScript\] Langage déclaratif pour modéliser des règles de calcul (cotisations, aides) qui produit automatiquement l'explication de chaque résultat.
+- [Publicodes](https://github.com/publicodes/publicodes) - \[Gratuit\] \[Open source\] \[JavaScript\] Langage déclaratif pour modéliser des règles de calcul (cotisations, aides) qui produit automatiquement l'explication de chaque résultat.
 
 ## Apprendre
 
@@ -190,6 +189,8 @@ Autres listes de type awesome sur le droit, les données publiques ou la régula
 Projets sans activité depuis plus de 24 mois. Ils restent utiles comme référence mais peuvent ne plus fonctionner.
 
 - [Archéo Lex](https://github.com/Legilibre/Archeo-Lex) - \[Gratuit\] \[Open source\] \[Python\] \[Non maintenu\] Convertit chaque texte de la base LEGI en un fichier Markdown versionné sous Git pour comparer ses versions successives. Dernier commit en mars 2019.
+- [Guide de la pseudonymisation (Etalab)](https://github.com/etalab/guides.etalab.gouv.fr/tree/master/pseudonymisation) - \[Gratuit\] \[Non maintenu\] Guide d'Etalab sur la pseudonymisation de documents textuels, illustré par les décisions de justice. Le site ne répond plus ; le lien mène aux sources du guide. Dernier commit en mai 2024.
+- [Label](https://github.com/Cour-de-cassation/label) - \[Gratuit\] \[Open source\] \[Non maintenu\] Logiciel de la Cour de cassation pour relire les décisions pré-annotées avant publication pseudonymisée. Dépôt archivé par ses auteurs (dernier commit en septembre 2025).
 - [Legit.jl](https://github.com/Legilibre/Legit.jl) - \[Gratuit\] \[Open source\] \[Non maintenu\] Script expérimental en Julia qui transformait la base LEGI en dépôts Git et Markdown. Dernier commit en juillet 2015.
 - [LEXTREME](https://github.com/JoelNiklaus/LEXTREME) - \[Gratuit\] \[IA\] \[Python\] \[Non maintenu\] Code du banc d'essai juridique multilingue LEXTREME, qui inclut des tâches en français ; le jeu de données reste publié sur Hugging Face. Dernier commit en décembre 2023.
 - [loifrancaise](https://github.com/Seb35/loifrancaise) - \[Gratuit\] \[Open source\] \[Python\] \[Non maintenu\] Bibliothèque issue d'Archéo Lex pour télécharger et lire les bases LEGI, KALI, JORF ou CNIL. Dernier commit en avril 2015.
@@ -202,4 +203,4 @@ Les participants s'engagent à respecter le [code de conduite](CODE_OF_CONDUCT.m
 
 ## Licence du contenu
 
-Dans la limite permise par la loi, la personne qui maintient cette liste ([HossLaRue](https://github.com/HossLaRue)) renonce à tous ses droits sur son contenu, placé sous [CC0 1.0](LICENSE). Les scripts du dossier `scripts/` sont publiés sous [licence MIT](scripts/LICENSE).
+Dans la limite permise par la loi, la personne qui maintient cette liste ([GitByHossam](https://github.com/GitByHossam)) renonce à tous ses droits sur son contenu, placé sous [CC0 1.0](LICENSE). Les scripts du dossier `scripts/` sont publiés sous [licence MIT](scripts/LICENSE).
