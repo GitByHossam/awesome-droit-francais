@@ -219,39 +219,39 @@ ressources:
     url: "https://huggingface.co/datasets/antoinejeannot/jurisprudence"
     categorie: donnees
     sous_categorie: null
-    description: "Plus d'un million de décisions judiciaires récupérées via Judilibre et publiées en JSONL et Parquet, pratiques pour l'analyse ou l'entraînement de modèles."
+    description: "Plus d'un million de décisions judiciaires récupérées via Judilibre jusqu'en mars 2025, en JSONL et Parquet, pour l'analyse ou l'entraînement de modèles ; collecte arrêtée depuis."
     etiquettes: [gratuit, open-source, ia]
     licence: "Licence Ouverte 2.0"
     type: donnees
     depot_github: "antoinejeannot/jurisprudence"
     statut: actif
-    verifie_le: 2026-11-02
+    verifie_le: 2026-11-03
 
   legalkit:
-    nom: "LegalKit"
-    url: "https://github.com/louisbrulenaudet/legalkit-pipeline"
+    nom: "LegalKit (jeux Hugging Face)"
+    url: "https://huggingface.co/louisbrulenaudet"
     categorie: donnees
     sous_categorie: null
-    description: "Chaîne de traitement qui publie les codes français sous forme de jeux de données Hugging Face (un jeu par code), avec un exemple de chargement groupé."
+    description: "Jeux de données Hugging Face, un par code français, mis à jour jusqu'en septembre 2025 ; le pipeline qui les produit n'a plus de commit depuis novembre 2024."
     etiquettes: [gratuit, open-source, ia, python]
     licence: "Apache 2.0"
     type: donnees
-    depot_github: "louisbrulenaudet/legalkit-pipeline"
+    depot_github: null
     statut: actif
-    verifie_le: 2026-11-02
+    verifie_le: 2026-11-03
 
   tricoteuses-legi:
     nom: "Tricoteuses LEGI"
     url: "https://huggingface.co/datasets/Tricoteuses/LEGI"
     categorie: donnees
     sous_categorie: null
-    description: "Articles en vigueur de la base LEGI convertis en tableau avec leurs dates et identifiants ; le même éditeur publie aussi les bases CNIL et CAPP."
+    description: "Articles de la base LEGI en vigueur au 6 avril 2025, convertis en tableau avec leurs dates et identifiants ; le même éditeur publie aussi les bases CNIL et CAPP."
     etiquettes: [gratuit]
-    licence: "MIT"
+    licence: "MIT (données DILA sous Licence Ouverte 2.0)"
     type: donnees
     depot_github: null
     statut: actif
-    verifie_le: 2026-11-02
+    verifie_le: 2026-11-03
 
   codes-markdown:
     nom: "Codes en Markdown (LeMyst)"
@@ -274,6 +274,58 @@ ressources:
     description: "Décisions constitutionnelles, administratives et judiciaires découpées en segments, utiles pour construire un moteur de recherche ou un système RAG."
     etiquettes: [gratuit, ia]
     licence: "CC BY-SA 4.0"
+    type: donnees
+    depot_github: null
+    statut: actif
+    verifie_le: 2026-11-02
+
+  agentpublic-legi:
+    nom: "LEGI vectorisé (MediaTech, AgentPublic)"
+    url: "https://huggingface.co/datasets/AgentPublic/legi"
+    categorie: donnees
+    sous_categorie: null
+    description: "Codes, lois et décrets consolidés de LEGI découpés par article et vectorisés (bge-m3) par la DINUM, pour une recherche sémantique ou un RAG. Jeux voisins : CNIL, CONSTIT, DOLE."
+    etiquettes: [gratuit, ia]
+    licence: "Licence Ouverte 2.0"
+    type: donnees
+    depot_github: "etalab-ia/mediatech"
+    statut: actif
+    verifie_le: 2026-11-02
+
+  agentpublic-constit:
+    nom: "CONSTIT vectorisé (MediaTech, AgentPublic)"
+    url: "https://huggingface.co/datasets/AgentPublic/constit"
+    categorie: donnees
+    sous_categorie: null
+    description: "Décisions du Conseil constitutionnel issues de la base CONSTIT de la DILA, découpées et vectorisées pour la recherche sémantique."
+    etiquettes: [gratuit, ia]
+    licence: "Licence Ouverte 2.0"
+    type: donnees
+    depot_github: null
+    statut: actif
+    verifie_le: 2026-11-02
+
+  agentpublic-cnil:
+    nom: "Délibérations CNIL vectorisées (MediaTech, AgentPublic)"
+    url: "https://huggingface.co/datasets/AgentPublic/cnil"
+    categorie: donnees
+    sous_categorie: null
+    description: "Délibérations de la CNIL issues de l'open data de la DILA, découpées et vectorisées, pour interroger la doctrine en protection des données."
+    etiquettes: [gratuit, ia]
+    licence: "Licence Ouverte 2.0"
+    type: donnees
+    depot_github: null
+    statut: actif
+    verifie_le: 2026-11-02
+
+  agentpublic-dole:
+    nom: "Dossiers législatifs DOLE vectorisés (MediaTech, AgentPublic)"
+    url: "https://huggingface.co/datasets/AgentPublic/dole"
+    categorie: donnees
+    sous_categorie: null
+    description: "Dossiers législatifs de la base DOLE (exposés des motifs, étapes de la procédure) découpés et vectorisés, pour retracer la genèse d'une loi."
+    etiquettes: [gratuit, ia]
+    licence: "Licence Ouverte 2.0"
     type: donnees
     depot_github: null
     statut: actif
@@ -327,24 +379,76 @@ ressources:
     url: "https://github.com/SocialGouv/legi-data"
     categorie: bibliotheques
     sous_categorie: bibliotheques-js
-    description: "Paquet npm qui fournit en JSON quelques codes (travail, sécurité sociale) avec une API TypeScript ; ses auteurs le disent expérimental."
+    description: "Paquet npm qui fournit en JSON quatre codes (travail, sécurité sociale, rural, relations public-administration) avec une API TypeScript ; réservé par ses auteurs à un usage interne expérimental."
     etiquettes: [gratuit, open-source, javascript]
     licence: "Apache 2.0"
     type: bibliotheque
     depot_github: "SocialGouv/legi-data"
     statut: actif
-    verifie_le: 2026-11-02
+    verifie_le: 2026-11-03
 
   kali-data:
     nom: "kali-data"
     url: "https://github.com/SocialGouv/kali-data"
     categorie: bibliotheques
     sous_categorie: bibliotheques-js
-    description: "Paquet npm qui rassemble en JSON les conventions collectives extraites de l'API DILA ; projet signalé comme expérimental."
+    description: "Paquet npm qui rassemble en JSON les conventions collectives extraites de l'API DILA ; projet expérimental, réservé par ses auteurs à un usage interne."
     etiquettes: [gratuit, open-source, javascript]
     licence: "Apache 2.0"
     type: bibliotheque
     depot_github: "SocialGouv/kali-data"
+    statut: actif
+    verifie_le: 2026-11-03
+
+  pyjudilibre:
+    nom: "pyjudilibre"
+    url: "https://github.com/pauldechorgnat/pyjudilibre"
+    categorie: bibliotheques
+    sous_categorie: bibliotheques-python
+    description: "Client Python de l'API Judilibre pour rechercher et récupérer des décisions de justice ; nécessite des identifiants PISTE, documentation en anglais."
+    etiquettes: [gratuit, open-source, inscription, python]
+    licence: "MIT"
+    type: bibliotheque
+    depot_github: "pauldechorgnat/pyjudilibre"
+    statut: actif
+    verifie_le: 2026-11-02
+
+  eurlex-python:
+    nom: "eurlex (Python)"
+    url: "https://github.com/kevin91nl/eurlex"
+    categorie: bibliotheques
+    sous_categorie: bibliotheques-python
+    description: "Bibliothèque Python qui télécharge un acte EUR-Lex par son numéro CELEX et le découpe en tableau Pandas, article par article ; documentation en anglais."
+    etiquettes: [gratuit, open-source, python]
+    licence: "MIT"
+    type: bibliotheque
+    depot_github: "kevin91nl/eurlex"
+    statut: actif
+    verifie_le: 2026-11-02
+
+  fiches-vdd:
+    nom: "@socialgouv/fiches-vdd"
+    url: "https://github.com/SocialGouv/fiches-vdd"
+    categorie: bibliotheques
+    sous_categorie: bibliotheques-js
+    description: "Paquet npm qui fournit en JSON les fiches Vos droits et démarches de Service-Public.fr, mises à jour chaque jour ; environ 500 Mo de données."
+    etiquettes: [gratuit, open-source, javascript]
+    licence: "MIT"
+    type: bibliotheque
+    depot_github: "SocialGouv/fiches-vdd"
+    statut: actif
+    verifie_le: 2026-11-02
+
+  legifrance-obsidian:
+    nom: "Legifrance Integration (Obsidian)"
+    url: "https://github.com/carnetdethese/legifrance-integration"
+    categorie: bibliotheques
+    sous_categorie: bibliotheques-js
+    description: "Plugin Obsidian qui interroge l'API Légifrance, repère les textes et décisions cités dans vos notes et en conserve le texte ; identifiants PISTE requis."
+    etiquettes: [gratuit, open-source, inscription]
+    licence: "MIT"
+    type: outil
+    depot_github: "carnetdethese/legifrance-integration"
     statut: actif
     verifie_le: 2026-11-02
 
@@ -370,39 +474,39 @@ ressources:
     url: "https://justicelibre.org/"
     categorie: ia
     sous_categorie: ia-mcp
-    description: "Serveur MCP hébergé qui interroge jurisprudence, codes et doctrine administrative issus de l'open data ; la recherche fonctionne sans compte."
+    description: "Serveur MCP hébergé qui interroge la jurisprudence française et européenne (CEDH, CJUE), les codes et la doctrine administrative ; la recherche fonctionne sans compte."
     etiquettes: [gratuit, ia]
     licence: "Données sous Licence Ouverte ; code actuel non publié"
     type: mcp
     depot_github: null
     statut: actif
-    verifie_le: 2026-11-02
+    verifie_le: 2026-11-03
 
   droit-francais-mcp:
     nom: "DroitFrancaisMCP"
     url: "https://github.com/jmtanguy/droit-francais-mcp"
     categorie: ia
     sous_categorie: ia-mcp
-    description: "Serveur MCP à installer soi-même qui interroge Légifrance et Judilibre avec vos propres identifiants PISTE."
+    description: "Serveur MCP expérimental, à installer soi-même, qui interroge Légifrance et Judilibre avec vos propres identifiants PISTE."
     etiquettes: [gratuit, open-source, inscription, ia, python]
     licence: "MIT"
     type: mcp
     depot_github: "jmtanguy/droit-francais-mcp"
     statut: actif
-    verifie_le: 2026-11-02
+    verifie_le: 2026-11-03
 
   mcp-server-legifrance:
     nom: "mcp-server-legifrance"
     url: "https://github.com/pylegifrance/mcp-server-legifrance"
     categorie: ia
     sous_categorie: ia-mcp
-    description: "Serveur MCP expérimental pour rechercher lois, articles de code et jurisprudence judiciaire ; il demande une clé délivrée par lab.dassignies.law."
+    description: "Serveur MCP expérimental pour rechercher lois, articles de code et jurisprudence judiciaire ; il demande une clé délivrée par le Lab de dassignies."
     etiquettes: [gratuit, open-source, inscription, ia, python]
     licence: "MIT"
     type: mcp
     depot_github: "pylegifrance/mcp-server-legifrance"
     statut: actif
-    verifie_le: 2026-11-02
+    verifie_le: 2026-11-03
 
   juribert:
     nom: "JuriBERT"
@@ -422,13 +526,13 @@ ressources:
     url: "https://huggingface.co/louisbrulenaudet/lemone-embed-pro"
     categorie: ia
     sous_categorie: ia-modeles
-    description: "Modèles d'embeddings spécialisés en fiscalité française, utiles pour la recherche sémantique dans le CGI et la doctrine fiscale."
+    description: "Famille de modèles d'embeddings spécialisés en fiscalité française (variantes s, m, l et pro), pour la recherche sémantique dans le CGI et la doctrine fiscale."
     etiquettes: [gratuit, ia]
     licence: "Apache 2.0"
     type: modele
     depot_github: null
     statut: actif
-    verifie_le: 2026-11-02
+    verifie_le: 2026-11-03
 
   romulus:
     nom: "Romulus"
@@ -437,24 +541,24 @@ ressources:
     sous_categorie: ia-modeles
     description: "Llama 3.1 8B dont l'entraînement a été prolongé sur du droit français ; c'est une base à affiner, non alignée pour produire directement des réponses."
     etiquettes: [gratuit, ia]
-    licence: "Llama 3 Community License"
+    licence: "Llama 3.1 Community License"
     type: modele
     depot_github: null
     statut: actif
-    verifie_le: 2026-11-02
+    verifie_le: 2026-11-03
 
   lleqa:
     nom: "LLeQA"
     url: "https://huggingface.co/datasets/maastrichtlawtech/lleqa"
     categorie: ia
     sous_categorie: ia-benchmarks
-    description: "Questions juridiques rédigées en français avec réponses détaillées d'experts et articles de loi belges, pour évaluer la génération de réponses."
+    description: "Questions juridiques en français avec réponses d'experts et articles de loi belges, pour évaluer la génération de réponses ; accès sur demande sur Hugging Face."
     etiquettes: [gratuit, inscription, ia]
     licence: "CC BY-NC-SA 4.0"
     type: donnees
     depot_github: null
     statut: actif
-    verifie_le: 2026-11-02
+    verifie_le: 2026-11-03
 
   bsard:
     nom: "BSARD"
@@ -488,12 +592,12 @@ ressources:
     categorie: ia
     sous_categorie: ia-anonymisation
     description: "Boîte à outils de détection et de masquage de données personnelles ; prévue pour l'anglais par défaut, elle s'adapte au français avec un modèle linguistique adéquat."
-    etiquettes: [gratuit, open-source, python]
+    etiquettes: [gratuit, open-source, ia, python]
     licence: "MIT"
     type: bibliotheque
     depot_github: "data-privacy-stack/presidio"
     statut: actif
-    verifie_le: 2026-11-02
+    verifie_le: 2026-11-03
 
   eds-pseudo:
     nom: "EDS-Pseudo"
@@ -505,6 +609,58 @@ ressources:
     licence: "BSD 3-Clause"
     type: bibliotheque
     depot_github: "aphp/eds-pseudo"
+    statut: actif
+    verifie_le: 2026-11-02
+
+  eur-lex-mcp-cyanheads:
+    nom: "EUR-Lex MCP Server"
+    url: "https://github.com/cyanheads/eur-lex-mcp-server"
+    categorie: ia
+    sous_categorie: ia-mcp
+    description: "Serveur MCP qui permet à un assistant IA de chercher et lire les actes de l'UE et la jurisprudence de la CJUE sur EUR-Lex. Documentation en anglais."
+    etiquettes: [gratuit, open-source, ia, javascript]
+    licence: "Apache 2.0"
+    type: mcp
+    depot_github: "cyanheads/eur-lex-mcp-server"
+    statut: actif
+    verifie_le: 2026-11-02
+
+  eurlex-mcp-honeyfield:
+    nom: "eurlex-mcp-server"
+    url: "https://github.com/Honeyfield-Org/eurlex-mcp-server"
+    categorie: ia
+    sous_categorie: ia-mcp
+    description: "Serveur MCP sans clé d'API pour interroger EUR-Lex : textes consolidés, arrêts de la CJUE et mesures nationales de transposition, en français. Documentation en anglais."
+    etiquettes: [gratuit, open-source, ia, javascript]
+    licence: "MIT"
+    type: mcp
+    depot_github: "Honeyfield-Org/eurlex-mcp-server"
+    statut: actif
+    verifie_le: 2026-11-02
+
+  ccass-rapprochements:
+    nom: "Rapprochements de sommaires (Cour de cassation)"
+    url: "https://huggingface.co/datasets/Cour-de-cassation/ccass_rapprochements_sommaires_with_sources"
+    categorie: ia
+    sous_categorie: ia-modeles
+    description: "Paires de sommaires d'arrêts jugés similaires, publiées par la Cour de cassation pour entraîner ou évaluer des modèles de recherche sémantique."
+    etiquettes: [gratuit, ia]
+    licence: "Apache 2.0"
+    type: donnees
+    depot_github: null
+    statut: actif
+    verifie_le: 2026-11-02
+
+  ccass-titrage-sommaires:
+    nom: "Titrage et sommaires (Cour de cassation)"
+    url: "https://huggingface.co/datasets/Cour-de-cassation/alpaca_ccass_motivations_sommaires_titres"
+    categorie: ia
+    sous_categorie: ia-modeles
+    description: "Exemples au format Alpaca publiés par la Cour de cassation pour entraîner un modèle à produire le titrage et le sommaire d'un arrêt à partir de sa motivation."
+    etiquettes: [gratuit, ia]
+    licence: "Apache 2.0"
+    type: donnees
+    depot_github: null
     statut: actif
     verifie_le: 2026-11-02
 
@@ -527,16 +683,16 @@ ressources:
 
   inc-lettres-types:
     nom: "Lettres types de l'INC"
-    url: "https://www.inc-conso.fr/content/150-lettres-types-pour-r%C3%A9gler-vos-litiges"
+    url: "https://www.inc-conso.fr/content/lettres-types-pour-regler-vos-litiges"
     categorie: modeles-documents
     sous_categorie: null
-    description: "Courriers prêts à compléter de l'Institut national de la consommation pour les litiges courants (banque, assurance, logement), en PDF ou Word."
+    description: "Courriers prêts à compléter de l'Institut national de la consommation pour les litiges courants (banque, assurance, logement)."
     etiquettes: [gratuit]
     licence: "Conditions d'utilisation du site"
     type: site
     depot_github: null
     statut: actif
-    verifie_le: 2026-11-02
+    verifie_le: 2026-11-03
 
   docassemble:
     nom: "Docassemble"
@@ -583,16 +739,16 @@ ressources:
 
   justice-pension-alimentaire:
     nom: "Simulateur de pension alimentaire (justice.fr)"
-    url: "https://www.justice.fr/fiche/simulateur-calcul-pension-alimentaire-simulateur"
+    url: "https://www.justice.fr/simulateurs/pensions-alimentaire"
     categorie: calculateurs
     sous_categorie: null
-    description: "Donne une estimation de la pension alimentaire selon les revenus, le nombre d'enfants et le mode de garde ; seul le juge fixe le montant."
+    description: "Donne une estimation de la pension alimentaire selon les revenus, le nombre d'enfants et le mode de garde, résidence alternée comprise ; seul le juge fixe le montant."
     etiquettes: [gratuit]
     licence: "Conditions d'utilisation du site"
     type: outil
     depot_github: null
     statut: actif
-    verifie_le: 2026-11-02
+    verifie_le: 2026-11-03
 
   justice-interet-legal:
     nom: "Calcul de l'intérêt légal (justice.fr)"
@@ -609,29 +765,29 @@ ressources:
 
   inc-revision-loyer:
     nom: "Calcul de la révision du loyer (INC)"
-    url: "https://www.inc-conso.fr/content/calculez-laugmentation-de-votre-loyer-0"
+    url: "https://www.inc-conso.fr/content/logement/calculez-laugmentation-de-votre-loyer"
     categorie: calculateurs
     sous_categorie: null
-    description: "Calcule la hausse annuelle autorisée d'un loyer d'habitation à partir de l'indice de référence des loyers publié par l'Insee."
+    description: "Calcule la hausse annuelle autorisée d'un loyer d'habitation à partir de l'indice de référence des loyers publié par l'Insee, pour les indices publiés depuis 2005."
     etiquettes: [gratuit]
     licence: "Conditions d'utilisation du site"
     type: outil
     depot_github: null
     statut: actif
-    verifie_le: 2026-11-02
+    verifie_le: 2026-11-03
 
   calculateur-delais-penal:
     nom: "Calculateur de délais de procédure pénale"
     url: "https://www.simonnetavocat.fr/calculateur-delais-procedure-penale/"
     categorie: calculateurs
     sous_categorie: null
-    description: "Outil gratuit publié par un cabinet d'avocats qui calcule l'échéance d'environ 47 délais pénaux et cite l'article applicable ; à contrôler sur les textes."
+    description: "Outil gratuit publié par un cabinet d'avocats qui calcule l'échéance de délais de procédure pénale et cite l'article applicable ; à contrôler sur les textes."
     etiquettes: [gratuit]
     licence: "Conditions d'utilisation du site"
     type: outil
     depot_github: null
     statut: actif
-    verifie_le: 2026-11-02
+    verifie_le: 2026-11-03
 
   mon-entreprise:
     nom: "Mon-entreprise (Urssaf)"
@@ -702,6 +858,32 @@ ressources:
     statut: actif
     verifie_le: 2026-11-02
 
+  aides-jeunes:
+    nom: "Simulateur d'aides 1jeune1solution (aides-jeunes)"
+    url: "https://github.com/DNUM-SocialGouv/aides-jeunes"
+    categorie: droit-code
+    sous_categorie: null
+    description: "Code ouvert du simulateur public des aides sociales pour les 15-30 ans, fondé sur OpenFisca ; utile pour lire des règles d'éligibilité traduites en code."
+    etiquettes: [gratuit, open-source]
+    licence: "AGPL-3.0"
+    type: outil
+    depot_github: "DNUM-SocialGouv/aides-jeunes"
+    statut: actif
+    verifie_le: 2026-11-02
+
+  openfisca-core:
+    nom: "OpenFisca-Core"
+    url: "https://github.com/openfisca/openfisca-core"
+    categorie: droit-code
+    sous_categorie: null
+    description: "Moteur Python d'OpenFisca qui exécute des législations écrites en code pour simuler impôts et prestations ; base d'OpenFisca-France, documentation en anglais."
+    etiquettes: [gratuit, open-source, python]
+    licence: "AGPL-3.0"
+    type: bibliotheque
+    depot_github: "openfisca/openfisca-core"
+    statut: actif
+    verifie_le: 2026-11-02
+
   # ---------------------------------------------------------------------------
   # 8. Apprendre
   # ---------------------------------------------------------------------------
@@ -713,11 +895,11 @@ ressources:
     sous_categorie: null
     description: "Manuel en ligne, disponible en français, qui montre comment passer d'un texte juridique à un programme Catala et comment juristes et développeurs y collaborent."
     etiquettes: [gratuit, open-source]
-    licence: "Non précisée dans le dépôt"
+    licence: "CC BY 4.0"
     type: formation
     depot_github: "CatalaLang/catala-book"
     statut: actif
-    verifie_le: 2026-11-02
+    verifie_le: 2026-11-03
 
   cs50-law:
     nom: "CS50 for Lawyers"
@@ -797,13 +979,13 @@ ressources:
     url: "https://github.com/Vaquill-AI/awesome-legaltech"
     categorie: listes-soeurs
     sous_categorie: null
-    description: "Liste internationale d'outils, de données et de ressources legaltech, maintenue par une entreprise du secteur."
+    description: "Liste internationale d'outils, de données et de ressources legaltech, à dominante américaine, maintenue par l'entreprise Vaquill AI qui y signale ses propres projets."
     etiquettes: [gratuit]
     licence: "CC0 1.0"
     type: site
     depot_github: "Vaquill-AI/awesome-legaltech"
     statut: actif
-    verifie_le: 2026-11-02
+    verifie_le: 2026-11-03
 
   awesome-legal-nlp:
     nom: "Awesome Legal NLP"
@@ -854,6 +1036,45 @@ ressources:
     licence: "CC0 1.0"
     type: site
     depot_github: "rnckp/awesome-ogd-switzerland"
+    statut: actif
+    verifie_le: 2026-11-02
+
+  awesome-ai-regulation:
+    nom: "Awesome AI Regulation, Principles & Guidelines"
+    url: "https://github.com/EthicalML/awesome-artificial-intelligence-regulation"
+    categorie: listes-soeurs
+    sous_categorie: null
+    description: "Liste de textes, principes et normes encadrant l'IA, classés par zone géographique, pour comparer les approches réglementaires. En anglais, sans entrée propre à la France."
+    etiquettes: [gratuit, ia]
+    licence: "MIT"
+    type: site
+    depot_github: "EthicalML/awesome-artificial-intelligence-regulation"
+    statut: actif
+    verifie_le: 2026-11-02
+
+  awesome-gdpr:
+    nom: "Awesome GDPR"
+    url: "https://github.com/oppoverbakke/awesome-gdpr"
+    categorie: listes-soeurs
+    sous_categorie: null
+    description: "Liste de ressources sur le RGPD : lignes directrices du CEPD, AIPD, registre, sécurité, outils et autorités de contrôle, dont la CNIL. En anglais."
+    etiquettes: [gratuit]
+    licence: "Non précisée dans le dépôt"
+    type: site
+    depot_github: "oppoverbakke/awesome-gdpr"
+    statut: actif
+    verifie_le: 2026-11-02
+
+  awesome-responsible-ai:
+    nom: "Awesome Responsible AI"
+    url: "https://github.com/AthenaCore/AwesomeResponsibleAI"
+    categorie: listes-soeurs
+    sous_categorie: null
+    description: "Liste de cadres, normes, codes d'éthique et réglementations sur l'IA responsable, utile pour préparer la conformité au règlement européen sur l'IA. En anglais."
+    etiquettes: [gratuit, ia]
+    licence: "MIT"
+    type: site
+    depot_github: "AthenaCore/AwesomeResponsibleAI"
     statut: actif
     verifie_le: 2026-11-02
 
@@ -928,15 +1149,15 @@ ressources:
 
   label-cour-de-cassation:
     nom: "Label"
-    url: "https://github.com/Cour-de-cassation/label"
-    categorie: archives
-    sous_categorie: null
-    description: "Logiciel de la Cour de cassation pour relire les décisions pré-annotées avant publication pseudonymisée. Dépôt archivé par ses auteurs (dernier commit en septembre 2025)."
-    etiquettes: [gratuit, open-source, non-maintenu]
+    url: "https://github.com/Cour-de-cassation/label-back"
+    categorie: ia
+    sous_categorie: ia-anonymisation
+    description: "Logiciel de la Cour de cassation pour relire et corriger les annotations de pseudonymisation des décisions avant publication. Interface dans le dépôt label-front."
+    etiquettes: [gratuit, open-source, javascript]
     licence: "MIT"
     type: outil
-    depot_github: "Cour-de-cassation/label"
-    statut: archive
+    depot_github: "Cour-de-cassation/label-back"
+    statut: actif
     verifie_le: 2026-11-02
 
   guide-pseudonymisation:
@@ -949,5 +1170,31 @@ ressources:
     licence: "Licence Ouverte 2.0"
     type: formation
     depot_github: "etalab/guides.etalab.gouv.fr"
+    statut: non-maintenu
+    verifie_le: 2026-11-02
+
+  juritools:
+    nom: "juritools (Cour de cassation)"
+    url: "https://github.com/Cour-de-cassation/juritools"
+    categorie: archives
+    sous_categorie: null
+    description: "Bibliothèque Python de la Cour de cassation pour pseudonymiser les décisions des bases Jurinet et Jurica. Dernier commit en janvier 2024."
+    etiquettes: [gratuit, open-source, python, non-maintenu]
+    licence: "MIT"
+    type: bibliotheque
+    depot_github: "Cour-de-cassation/juritools"
+    statut: non-maintenu
+    verifie_le: 2026-11-02
+
+  lethe:
+    nom: "LÉTHÉ (Gendarmerie nationale)"
+    url: "https://github.com/GendarmerieNationale/LETHE"
+    categorie: archives
+    sous_categorie: null
+    description: "Bibliothèque Python du Datalab de la Gendarmerie pour repérer et pseudonymiser les entités nommées dans des textes en français. Dernier commit en septembre 2023."
+    etiquettes: [gratuit, open-source, python, non-maintenu]
+    licence: "Apache 2.0"
+    type: bibliotheque
+    depot_github: "GendarmerieNationale/LETHE"
     statut: non-maintenu
     verifie_le: 2026-11-02
