@@ -222,4 +222,4 @@ Les participants s'engagent à respecter le [code de conduite](CODE_OF_CONDUCT.m
 
 ## Licence du contenu
 
-Dans la limite permise par la loi, la personne qui maintient cette liste ([GitByHossam](https://github.com/GitByHossam)) renonce à tous ses droits sur son contenu, placé sous [CC0 1.0](LICENSE). Les scripts du dossier `scripts/` sont publiés sous [licence MIT](scripts/LICENSE).
+Dans la limite permise par la loi, la personne qui maintient cette liste ([GitByHossam](https://github.com/GitByHossam)) renonce à tous ses droits sur son contenu, placé sous [CC0 1.0](LICENSE). Les scripts du dossier `scripts/` sont publiés sous [licence MIT](scripts/LICENSE). 
