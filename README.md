@@ -3,8 +3,8 @@
 
 > Ressources numériques utiles au droit français : sources officielles, données ouvertes, outils libres, IA juridique, modèles, calculateurs, formations et communautés.
 
-Cette liste s'adresse aux juristes francophones (avocats, juristes d'entreprise, étudiants, chercheurs) et aux développeurs qui construisent des outils pour eux.
-Elle existe pour retrouver en un seul endroit des ressources vérifiées, décrites simplement et classées par usage.
+Cette liste s'adresse aux juristes français (avocats, juristes d'entreprise, étudiants, chercheurs) et aux développeurs qui construisent des outils pour eux.
+L'objectif étant de retrouver en un seul endroit des ressources vérifiées, décrites simplement et classées par usage.
 Elle ne constitue ni un conseil juridique ni un annuaire commercial : vérifiez toujours un texte ou une décision sur sa source officielle.
 
 ## Sommaire
