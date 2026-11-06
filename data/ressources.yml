@@ -210,6 +210,97 @@ ressources:
     statut: actif
     verifie_le: 2026-11-02
 
+  judilibre-recherche:
+    nom: "Judilibre, moteur de recherche"
+    url: "https://www.courdecassation.fr/recherche-judilibre"
+    categorie: sources-officielles
+    sous_categorie: null
+    description: "Moteur de recherche gratuit des décisions pseudonymisées de la Cour de cassation, des cours d'appel et d'autres juridictions judiciaires, alimenté par l'API Judilibre."
+    etiquettes: [gratuit]
+    licence: "Licence Ouverte 2.0"
+    type: site
+    depot_github: null
+    statut: actif
+    verifie_le: 2026-11-06
+
+  piste:
+    nom: "PISTE"
+    url: "https://piste.gouv.fr/"
+    categorie: sources-officielles
+    sous_categorie: null
+    description: "Portail de l'État où créer un compte et des identifiants OAuth pour appeler les API Légifrance et Judilibre, avec un environnement de test (bac à sable)."
+    etiquettes: [gratuit, inscription]
+    licence: "CGU de PISTE et de chaque API"
+    type: api
+    depot_github: null
+    statut: actif
+    verifie_le: 2026-11-06
+
+  arianeweb:
+    nom: "ArianeWeb (Conseil d'État)"
+    url: "https://www.conseil-etat.fr/arianeweb/#/recherche"
+    categorie: sources-officielles
+    sous_categorie: null
+    description: "Recherche dans les décisions marquantes du Conseil d'État et des cours administratives d'appel, avec analyses et une sélection de conclusions des rapporteurs publics."
+    etiquettes: [gratuit]
+    licence: "Conditions d'utilisation du site"
+    type: site
+    depot_github: null
+    statut: actif
+    verifie_le: 2026-11-06
+
+  opendata-assemblee-nationale:
+    nom: "Open data de l'Assemblée nationale"
+    url: "https://data.assemblee-nationale.fr/"
+    categorie: sources-officielles
+    sous_categorie: null
+    description: "Téléchargement des données de l'Assemblée nationale (dossiers législatifs, amendements, scrutins, députés) en XML, JSON ou CSV pour suivre la procédure législative."
+    etiquettes: [gratuit]
+    licence: "Licence Ouverte"
+    type: donnees
+    depot_github: null
+    statut: actif
+    verifie_le: 2026-11-06
+
+  opendata-senat:
+    nom: "Open data du Sénat"
+    url: "https://data.senat.fr/"
+    categorie: sources-officielles
+    sous_categorie: null
+    description: "Bases du Sénat (dossiers législatifs Dosleg, amendements Ameli, questions, comptes rendus) téléchargeables pour analyser le travail parlementaire."
+    etiquettes: [gratuit]
+    licence: "Licence ouverte du Sénat (adaptée de celle d'Etalab)"
+    type: donnees
+    depot_github: null
+    statut: actif
+    verifie_le: 2026-11-06
+
+  api-recherche-entreprises:
+    nom: "API Recherche d'entreprises"
+    url: "https://recherche-entreprises.api.gouv.fr/"
+    categorie: sources-officielles
+    sous_categorie: null
+    description: "API publique sans clé pour retrouver une société par nom ou SIREN et obtenir ses dirigeants, établissements et statut ; quotas d'appels à respecter."
+    etiquettes: [gratuit, open-source]
+    licence: "Licence Ouverte 2.0 (données), MIT (code)"
+    type: api
+    depot_github: "annuaire-entreprises-data-gouv-fr/search-api"
+    statut: actif
+    verifie_le: 2026-11-06
+
+  cellar-sparql:
+    nom: "Cellar, point d'accès SPARQL (EUR-Lex)"
+    url: "https://op.europa.eu/en/advanced-sparql-query-editor"
+    categorie: sources-officielles
+    sous_categorie: null
+    description: "Interrogation en SPARQL des métadonnées du droit de l'Union qui alimentent EUR-Lex, pour construire des extractions ciblées. Interface en anglais."
+    etiquettes: [gratuit]
+    licence: "Politique de réutilisation de la Commission européenne"
+    type: api
+    depot_github: null
+    statut: actif
+    verifie_le: 2026-11-06
+
   # ---------------------------------------------------------------------------
   # 2. Données juridiques réutilisables
   # ---------------------------------------------------------------------------
@@ -331,6 +422,32 @@ ressources:
     statut: actif
     verifie_le: 2026-11-02
 
+  bofip-donnees:
+    nom: "BOFiP-Impôts, publications en vigueur"
+    url: "https://www.data.gouv.fr/datasets/bofip-impots-publications-en-vigueur"
+    categorie: donnees
+    sous_categorie: null
+    description: "Export en CSV et JSON de la doctrine fiscale administrative en vigueur (BOFiP-Impôts), publié par les ministères économiques et financiers, pour la recherche ou la veille fiscale."
+    etiquettes: [gratuit]
+    licence: "Licence Ouverte 2.0"
+    type: donnees
+    depot_github: null
+    statut: actif
+    verifie_le: 2026-11-06
+
+  open-terms-archive-france:
+    nom: "Open Terms Archive, collection France"
+    url: "https://github.com/OpenTermsArchive/france-versions"
+    categorie: donnees
+    sous_categorie: null
+    description: "Dépôt Git des versions successives des CGU et politiques de confidentialité de services en ligne utilisés en France, relevées toutes les 12 heures depuis 2022 ; utile pour dater une clause."
+    etiquettes: [gratuit, open-source]
+    licence: "ODC-BY 1.0 (données) ; EUPL 1.2 (moteur)"
+    type: donnees
+    depot_github: "OpenTermsArchive/france-versions"
+    statut: actif
+    verifie_le: 2026-11-06
+
   # ---------------------------------------------------------------------------
   # 3. Bibliothèques et clients d'API
   # ---------------------------------------------------------------------------
@@ -451,6 +568,71 @@ ressources:
     depot_github: "carnetdethese/legifrance-integration"
     statut: actif
     verifie_le: 2026-11-02
+
+  eurlex-r:
+    nom: "eurlex (R)"
+    url: "https://michalovadek.github.io/eurlex/"
+    categorie: bibliotheques
+    sous_categorie: bibliotheques-js
+    description: "Paquet R pour interroger EUR-Lex et le dépôt Cellar et récupérer actes, métadonnées et textes de l'UE sous forme de tableaux ; documentation en anglais."
+    etiquettes: [gratuit, open-source]
+    licence: "GPL-3.0"
+    type: bibliotheque
+    depot_github: "michalovadek/eurlex"
+    statut: actif
+    verifie_le: 2026-11-06
+
+  pynsee:
+    nom: "pynsee"
+    url: "https://github.com/InseeFrLab/pynsee"
+    categorie: bibliotheques
+    sous_categorie: bibliotheques-python
+    description: "Paquet Python d'InseeFrLab pour les API de l'Insee, dont Sirene (recherche d'entreprises et d'établissements par critères) ; la partie Sirene exige une clé gratuite du portail API de l'Insee."
+    etiquettes: [gratuit, open-source, inscription, python]
+    licence: "MIT"
+    type: bibliotheque
+    depot_github: "InseeFrLab/pynsee"
+    statut: actif
+    verifie_le: 2026-11-06
+
+  python-epo-ops-client:
+    nom: "python-epo-ops-client"
+    url: "https://github.com/ip-tools/python-epo-ops-client"
+    categorie: bibliotheques
+    sous_categorie: bibliotheques-python
+    description: "Client Python d'Open Patent Services (OEB) : bibliographie, familles, statut juridique et registre des brevets FR et EP ; clés OPS gratuites jusqu'à 4 Go par semaine, documentation en anglais."
+    etiquettes: [gratuit, open-source, inscription, python]
+    licence: "Apache 2.0"
+    type: bibliotheque
+    depot_github: "ip-tools/python-epo-ops-client"
+    statut: actif
+    verifie_le: 2026-11-06
+
+  echr-extractor:
+    nom: "echr-extractor"
+    url: "https://github.com/maastrichtlawtech/echr-extractor"
+    categorie: bibliotheques
+    sous_categorie: bibliotheques-python
+    description: "Bibliothèque Python qui télécharge depuis HUDOC les métadonnées et le texte intégral des arrêts de la CEDH, y compris en français, en CSV, JSON ou DataFrame ; documentation en anglais."
+    etiquettes: [gratuit, open-source, python]
+    licence: "Apache 2.0"
+    type: bibliotheque
+    depot_github: "maastrichtlawtech/echr-extractor"
+    statut: actif
+    verifie_le: 2026-11-06
+
+  fiches-travail-data:
+    nom: "@socialgouv/fiches-travail-data"
+    url: "https://github.com/SocialGouv/fiches-travail-data"
+    categorie: bibliotheques
+    sous_categorie: bibliotheques-js
+    description: "Paquet npm qui fournit en JSON les fiches pratiques du droit du travail du site travail-emploi.gouv.fr, republiées automatiquement ; documentation succincte en anglais."
+    etiquettes: [gratuit, open-source, javascript]
+    licence: "Apache 2.0"
+    type: bibliotheque
+    depot_github: "SocialGouv/fiches-travail-data"
+    statut: actif
+    verifie_le: 2026-11-06
 
   # ---------------------------------------------------------------------------
   # 4. IA juridique
@@ -664,6 +846,32 @@ ressources:
     statut: actif
     verifie_le: 2026-11-02
 
+  librejustice:
+    nom: "LibreJustice"
+    url: "https://librejustice.fr/"
+    categorie: ia
+    sous_categorie: ia-mcp
+    description: "Moteur de recherche libre reliant jurisprudence française et européenne et textes consolidés, interrogeable en ligne, par API (clé gratuite) ou par un serveur MCP."
+    etiquettes: [gratuit, open-source, inscription, ia]
+    licence: "Apache 2.0"
+    type: mcp
+    depot_github: "librejustice/librejustice"
+    statut: actif
+    verifie_le: 2026-11-06
+
+  mcp-inpi-pi:
+    nom: "mcp-inpi-pi"
+    url: "https://github.com/guix77/mcp-inpi-pi"
+    categorie: ia
+    sous_categorie: ia-mcp
+    description: "Serveur MCP non officiel qui cherche les marques françaises, de l'UE et internationales via l'API de l'INPI et fournit la classification de Nice ; compte API data.inpi.fr gratuit requis."
+    etiquettes: [gratuit, open-source, inscription, ia, javascript]
+    licence: "MIT"
+    type: mcp
+    depot_github: "guix77/mcp-inpi-pi"
+    statut: actif
+    verifie_le: 2026-11-06
+
   # ---------------------------------------------------------------------------
   # 5. Modèles de documents et automatisation
   # ---------------------------------------------------------------------------
@@ -802,6 +1010,32 @@ ressources:
     statut: actif
     verifie_le: 2026-11-02
 
+  simulateur-succession:
+    nom: "Simulateur des droits de succession"
+    url: "https://www.service-public.gouv.fr/simulateur/calcul/droits-succession"
+    categorie: calculateurs
+    sous_categorie: null
+    description: "Simulateur officiel qui estime les droits de succession à payer selon le lien de parenté, la part reçue et les dettes du défunt, hors frais de notaire."
+    etiquettes: [gratuit]
+    licence: "Conditions d'utilisation du site"
+    type: outil
+    depot_github: null
+    statut: actif
+    verifie_le: 2026-11-06
+
+  calculateur-delai-appel-civil:
+    nom: "Calculateur de délai d'appel en matière civile"
+    url: "https://www.simonnetavocat.fr/delai-pour-faire-appel-comment-le-calculer-automatiquement/"
+    categorie: calculateurs
+    sous_categorie: null
+    description: "Calcule le dernier jour pour faire appel d'un jugement civil (un mois, quinze jours en référé) à partir de sa signification ; outil d'un cabinet d'avocats, à vérifier sur les textes."
+    etiquettes: [gratuit]
+    licence: "Conditions d'utilisation du site"
+    type: outil
+    depot_github: null
+    statut: actif
+    verifie_le: 2026-11-06
+
   # ---------------------------------------------------------------------------
   # 7. Outils publics et droit codé
   # ---------------------------------------------------------------------------
@@ -884,6 +1118,58 @@ ressources:
     statut: actif
     verifie_le: 2026-11-02
 
+  catala-examples:
+    nom: "Exemples Catala"
+    url: "https://github.com/CatalaLang/catala-examples"
+    categorie: droit-code
+    sous_categorie: null
+    description: "Programmes Catala qui traduisent des textes français (allocations familiales, aides au logement, impôt sur le revenu) en code exécutable et testé ; documentation en anglais."
+    etiquettes: [gratuit, open-source]
+    licence: "Apache 2.0 (CeCILL 2.1 pour impot_revenu)"
+    type: outil
+    depot_github: "CatalaLang/catala-examples"
+    statut: actif
+    verifie_le: 2026-11-06
+
+  leximpact:
+    nom: "LexImpact (Assemblée nationale)"
+    url: "https://leximpact.an.fr/"
+    categorie: droit-code
+    sous_categorie: null
+    description: "Simulateurs de l'Assemblée nationale, fondés sur OpenFisca, qui chiffrent l'effet de réformes fiscales et sociales (PLF, PLFSS) sur des foyers types ; impact budgétaire en accès restreint."
+    etiquettes: [gratuit]
+    licence: "Conditions d'utilisation du site"
+    type: outil
+    depot_github: null
+    statut: actif
+    verifie_le: 2026-11-06
+
+  modeles-social:
+    nom: "@socialgouv/modeles-social"
+    url: "https://github.com/SocialGouv/code-du-travail-numerique/tree/dev/packages/code-du-travail-modeles"
+    categorie: droit-code
+    sous_categorie: null
+    description: "Règles Publicodes des simulateurs du Code du travail numérique (préavis, indemnités de licenciement, de précarité, de départ à la retraite), avec des variantes par convention ; pas de README dédié."
+    etiquettes: [gratuit, open-source, javascript]
+    licence: "Apache 2.0 (licence du dépôt ; non déclarée dans le paquet npm)"
+    type: bibliotheque
+    depot_github: "SocialGouv/code-du-travail-numerique"
+    statut: actif
+    verifie_le: 2026-11-06
+
+  mlang:
+    nom: "Mlang"
+    url: "https://github.com/MLanguage/mlang"
+    categorie: droit-code
+    sous_categorie: null
+    description: "Compilateur et interpréteur du langage M, dans lequel la DGFiP écrit le calcul de l'impôt sur le revenu ; permet d'exécuter les sources M publiées par la DGFiP. Documentation en anglais."
+    etiquettes: [gratuit, open-source]
+    licence: "GPL-3.0"
+    type: outil
+    depot_github: "MLanguage/mlang"
+    statut: actif
+    verifie_le: 2026-11-06
+
   # ---------------------------------------------------------------------------
   # 8. Apprendre
   # ---------------------------------------------------------------------------
@@ -927,6 +1213,32 @@ ressources:
     statut: actif
     verifie_le: 2026-11-02
 
+  mooc-cnil:
+    nom: "L'Atelier RGPD (MOOC de la CNIL)"
+    url: "https://www.cnil.fr/fr/comprendre-le-rgpd/le-mooc-de-la-cnil"
+    categorie: apprendre
+    sous_categorie: null
+    description: "MOOC gratuit de la CNIL en six modules (notions clés, principes, responsabilités, DPO, collectivités, travail) pour appliquer le RGPD, avec une attestation par module."
+    etiquettes: [gratuit, inscription]
+    licence: "Conditions d'utilisation du site"
+    type: formation
+    depot_github: null
+    statut: actif
+    verifie_le: 2026-11-06
+
+  guide-juridique-open-data:
+    nom: "Guide juridique de l'open data"
+    url: "https://guides.data.gouv.fr/guides/guide-juridique"
+    categorie: apprendre
+    sous_categorie: null
+    description: "Guide de data.gouv.fr sur les obligations d'ouverture des administrations et les règles à respecter pour réutiliser des données publiques (licences, mention de la source)."
+    etiquettes: [gratuit]
+    licence: "Non précisée"
+    type: site
+    depot_github: null
+    statut: actif
+    verifie_le: 2026-11-06
+
   # ---------------------------------------------------------------------------
   # 9. Communautés, événements et veille
   # ---------------------------------------------------------------------------
@@ -969,6 +1281,58 @@ ressources:
     depot_github: null
     statut: actif
     verifie_le: 2026-11-02
+
+  linc-cnil:
+    nom: "LINC (laboratoire d'innovation de la CNIL)"
+    url: "https://linc.cnil.fr/"
+    categorie: communautes
+    sous_categorie: null
+    description: "Laboratoire de la CNIL qui publie des articles, des cahiers et des expérimentations sur l'IA, les données et la vie privée, utiles pour la veille."
+    etiquettes: [gratuit, ia]
+    licence: "Conditions d'utilisation du site"
+    type: site
+    depot_github: null
+    statut: actif
+    verifie_le: 2026-11-06
+
+  adij:
+    nom: "ADIJ"
+    url: "https://adij.legal/"
+    categorie: communautes
+    sous_categorie: null
+    description: "Association qui réunit juristes et informaticiens autour du droit du numérique, avec des ateliers et des webinaires (série « Compliance numérique ») ; une partie est réservée aux adhérents."
+    etiquettes: [gratuit]
+    licence: "Conditions d'utilisation du site"
+    type: communaute
+    depot_github: null
+    statut: actif
+    verifie_le: 2026-11-06
+
+  juriconnexion:
+    nom: "Juriconnexion"
+    url: "https://www.juriconnexion.fr/"
+    categorie: communautes
+    sous_categorie: null
+    description: "Association des professionnels de l'information juridique : rendez-vous annuels, par exemple sur l'IA générative, et enquêtes sur le métier ; événements payants pour les non-adhérents."
+    etiquettes: [gratuit]
+    licence: "Conditions d'utilisation du site"
+    type: communaute
+    depot_github: null
+    statut: actif
+    verifie_le: 2026-11-06
+
+  monde-du-droit-ia:
+    nom: "Le Monde du Droit, rubrique Intelligence artificielle"
+    url: "https://www.lemondedudroit.fr/mag/378-intelligence-artificielle.html"
+    categorie: communautes
+    sous_categorie: null
+    description: "Rubrique d'actualité en accès libre sur l'IA juridique et les legaltechs : lancements d'outils, levées de fonds, positions des barreaux et programmes publics."
+    etiquettes: [gratuit, ia]
+    licence: "Conditions d'utilisation du site"
+    type: site
+    depot_github: null
+    statut: actif
+    verifie_le: 2026-11-06
 
   # ---------------------------------------------------------------------------
   # 10. Listes sœurs
@@ -1077,6 +1441,19 @@ ressources:
     depot_github: "AthenaCore/AwesomeResponsibleAI"
     statut: actif
     verifie_le: 2026-11-02
+
+  legal-text-analytics:
+    nom: "Legal Text Analytics"
+    url: "https://github.com/Liquid-Legal-Institute/Legal-Text-Analytics"
+    categorie: listes-soeurs
+    sous_categorie: null
+    description: "Liste de méthodes, bibliothèques, corpus et outils d'annotation pour analyser automatiquement des textes juridiques. En anglais."
+    etiquettes: [gratuit, ia]
+    licence: "CC BY-SA 4.0"
+    type: site
+    depot_github: "Liquid-Legal-Institute/Legal-Text-Analytics"
+    statut: actif
+    verifie_le: 2026-11-06
 
   # ---------------------------------------------------------------------------
   # 11. Projets archivés ou non maintenus (dernier commit il y a plus de 24 mois)

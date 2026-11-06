@@ -1,10 +1,10 @@
 <!-- Fichier généré par scripts/generer_readme.py. Modifiez data/ressources.yml. -->
 # Awesome Droit Français [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-> Ressources numériques droit français : sources officielles, données ouvertes, outils libres, IA juridique, modèles, calculateurs, formations et communautés.
+> Ressources numériques pour le droit français : sources officielles, données ouvertes, outils libres, IA juridique, modèles, calculateurs, formations et communautés.
 
 Cette liste s'adresse aux juristes français (avocats, juristes d'entreprise, étudiants, chercheurs) et aux développeurs qui construisent des outils pour eux.
-L'objectif étant de retrouver en un seul endroit des ressources vérifiées, décrites simplement et classées par usage.
+Son objectif est de retrouver en un seul endroit des ressources vérifiées, décrites simplement et classées par usage.
 Elle ne constitue ni un conseil juridique ni un annuaire commercial : vérifiez toujours un texte ou une décision sur sa source officielle.
 
 ## Sommaire
@@ -67,13 +67,20 @@ Portails et API de l'État et des institutions européennes pour accéder aux te
 
 - [API Judilibre](https://www.data.gouv.fr/dataservices/api-judilibre) - \[Gratuit\] \[Inscription\] Recherchez dans les décisions pseudonymisées de la Cour de cassation et des juridictions judiciaires, avec leurs métadonnées (ECLI, chambre, solution) ; accès via PISTE.
 - [API Légifrance](https://www.legifrance.gouv.fr/contenu/pied-de-page/open-data-et-api) - \[Gratuit\] \[Inscription\] Interrogez par programme les fonds de Légifrance (codes, textes, JORF, jurisprudence) avec des identifiants OAuth obtenus gratuitement sur le portail PISTE.
+- [API Recherche d'entreprises](https://recherche-entreprises.api.gouv.fr/) - \[Gratuit\] \[Open source\] API publique sans clé pour retrouver une société par nom ou SIREN et obtenir ses dirigeants, établissements et statut ; quotas d'appels à respecter.
+- [ArianeWeb (Conseil d'État)](https://www.conseil-etat.fr/arianeweb/#/recherche) - \[Gratuit\] Recherche dans les décisions marquantes du Conseil d'État et des cours administratives d'appel, avec analyses et une sélection de conclusions des rapporteurs publics.
+- [Cellar, point d'accès SPARQL (EUR-Lex)](https://op.europa.eu/en/advanced-sparql-query-editor) - \[Gratuit\] Interrogation en SPARQL des métadonnées du droit de l'Union qui alimentent EUR-Lex, pour construire des extractions ciblées. Interface en anglais.
 - [data.gouv.fr](https://www.data.gouv.fr/) - \[Gratuit\] Plateforme nationale des données publiques ; elle présente les bases juridiques (LEGI, KALI, CASS, JADE) et les outils qui les réutilisent.
 - [Décisions du Conseil constitutionnel](https://www.conseil-constitutionnel.fr/les-decisions) - \[Gratuit\] Retrouvez les décisions DC et QPC du Conseil grâce à une recherche experte, avec les commentaires officiels et les tables analytiques.
 - [EUR-Lex](https://eur-lex.europa.eu/homepage.html?locale=fr) - \[Gratuit\] Accès officiel au droit de l'Union européenne : Journal officiel de l'UE, traités, actes consolidés et jurisprudence, dans les 24 langues officielles.
 - [HUDOC](https://hudoc.echr.coe.int/FRE) - \[Gratuit\] Base de la Cour européenne des droits de l'homme : arrêts, décisions et résumés juridiques, consultables en français et filtrables par mots-clés.
+- [Judilibre, moteur de recherche](https://www.courdecassation.fr/recherche-judilibre) - \[Gratuit\] Moteur de recherche gratuit des décisions pseudonymisées de la Cour de cassation, des cours d'appel et d'autres juridictions judiciaires, alimenté par l'API Judilibre.
 - [Légifrance](https://www.legifrance.gouv.fr/) - \[Gratuit\] Point d'entrée officiel pour consulter les codes et lois consolidés, le Journal officiel, les conventions collectives et la jurisprudence.
+- [Open data de l'Assemblée nationale](https://data.assemblee-nationale.fr/) - \[Gratuit\] Téléchargement des données de l'Assemblée nationale (dossiers législatifs, amendements, scrutins, députés) en XML, JSON ou CSV pour suivre la procédure législative.
 - [Open data de la DILA](https://echanges.dila.gouv.fr/OPENDATA/) - \[Gratuit\] Serveur qui met à disposition les archives XML des bases LEGI, JORF, KALI, CNIL, JADE, CASS, CONSTIT et d'autres, avec des mises à jour incrémentales.
 - [Open data de la justice administrative](https://opendata.justice-administrative.fr/) - \[Gratuit\] Téléchargez en XML les décisions du Conseil d'État, des cours administratives d'appel et des tribunaux administratifs, regroupées par juridiction et par mois.
+- [Open data du Sénat](https://data.senat.fr/) - \[Gratuit\] Bases du Sénat (dossiers législatifs Dosleg, amendements Ameli, questions, comptes rendus) téléchargeables pour analyser le travail parlementaire.
+- [PISTE](https://piste.gouv.fr/) - \[Gratuit\] \[Inscription\] Portail de l'État où créer un compte et des identifiants OAuth pour appeler les API Légifrance et Judilibre, avec un environnement de test (bac à sable).
 - [Service-Public.fr](https://www.service-public.fr/) - \[Gratuit\] Fiches pratiques de l'administration qui expliquent les droits et démarches des particuliers et des entreprises, avec les références des textes.
 
 ## Données juridiques réutilisables
@@ -81,6 +88,7 @@ Portails et API de l'État et des institutions européennes pour accéder aux te
 Extractions, dépôts Git et jeux de données prêts à l'emploi, construits à partir des données publiques.
 
 - [ArGiMi French Jurisprudence](https://huggingface.co/datasets/artefactory/Argimi-Legal-French-Jurisprudence) - \[Gratuit\] \[IA\] Décisions constitutionnelles, administratives et judiciaires découpées en segments, utiles pour construire un moteur de recherche ou un système RAG.
+- [BOFiP-Impôts, publications en vigueur](https://www.data.gouv.fr/datasets/bofip-impots-publications-en-vigueur) - \[Gratuit\] Export en CSV et JSON de la doctrine fiscale administrative en vigueur (BOFiP-Impôts), publié par les ministères économiques et financiers, pour la recherche ou la veille fiscale.
 - [Codes en Markdown (LeMyst)](https://github.com/LeMyst/Codes) - \[Gratuit\] Dix-huit codes rangés en un fichier Markdown par article, mis à jour par commits réguliers : l'historique Git montre chaque modification.
 - [CONSTIT vectorisé (MediaTech, AgentPublic)](https://huggingface.co/datasets/AgentPublic/constit) - \[Gratuit\] \[IA\] Décisions du Conseil constitutionnel issues de la base CONSTIT de la DILA, découpées et vectorisées pour la recherche sémantique.
 - [Délibérations CNIL vectorisées (MediaTech, AgentPublic)](https://huggingface.co/datasets/AgentPublic/cnil) - \[Gratuit\] \[IA\] Délibérations de la CNIL issues de l'open data de la DILA, découpées et vectorisées, pour interroger la doctrine en protection des données.
@@ -88,6 +96,7 @@ Extractions, dépôts Git et jeux de données prêts à l'emploi, construits à 
 - [Jurisprudence (antoinejeannot)](https://huggingface.co/datasets/antoinejeannot/jurisprudence) - \[Gratuit\] \[Open source\] \[IA\] Plus d'un million de décisions judiciaires récupérées via Judilibre jusqu'en mars 2025, en JSONL et Parquet, pour l'analyse ou l'entraînement de modèles ; collecte arrêtée depuis.
 - [LegalKit (jeux Hugging Face)](https://huggingface.co/louisbrulenaudet) - \[Gratuit\] \[Open source\] \[IA\] \[Python\] Jeux de données Hugging Face, un par code français, mis à jour jusqu'en septembre 2025 ; le pipeline qui les produit n'a plus de commit depuis novembre 2024.
 - [LEGI vectorisé (MediaTech, AgentPublic)](https://huggingface.co/datasets/AgentPublic/legi) - \[Gratuit\] \[IA\] Codes, lois et décrets consolidés de LEGI découpés par article et vectorisés (bge-m3) par la DINUM, pour une recherche sémantique ou un RAG. Jeux voisins : CNIL, CONSTIT, DOLE.
+- [Open Terms Archive, collection France](https://github.com/OpenTermsArchive/france-versions) - \[Gratuit\] \[Open source\] Dépôt Git des versions successives des CGU et politiques de confidentialité de services en ligne utilisés en France, relevées toutes les 12 heures depuis 2022 ; utile pour dater une clause.
 - [Tricoteuses LEGI](https://huggingface.co/datasets/Tricoteuses/LEGI) - \[Gratuit\] Articles de la base LEGI en vigueur au 6 avril 2025, convertis en tableau avec leurs dates et identifiants ; le même éditeur publie aussi les bases CNIL et CAPP.
 
 ## Bibliothèques et clients d'API
@@ -96,15 +105,20 @@ Code réutilisable pour interroger les API juridiques ou exploiter les bases de 
 
 ### Python
 
+- [echr-extractor](https://github.com/maastrichtlawtech/echr-extractor) - \[Gratuit\] \[Open source\] \[Python\] Bibliothèque Python qui télécharge depuis HUDOC les métadonnées et le texte intégral des arrêts de la CEDH, y compris en français, en CSV, JSON ou DataFrame ; documentation en anglais.
 - [eurlex (Python)](https://github.com/kevin91nl/eurlex) - \[Gratuit\] \[Open source\] \[Python\] Bibliothèque Python qui télécharge un acte EUR-Lex par son numéro CELEX et le découpe en tableau Pandas, article par article ; documentation en anglais.
 - [legi.py](https://github.com/Legilibre/legi.py) - \[Gratuit\] \[Open source\] \[Python\] Construit et tient à jour une base SQLite à partir des archives LEGI, en reliant entre elles les versions successives d'un texte.
 - [pyjudilibre](https://github.com/pauldechorgnat/pyjudilibre) - \[Gratuit\] \[Open source\] \[Inscription\] \[Python\] Client Python de l'API Judilibre pour rechercher et récupérer des décisions de justice ; nécessite des identifiants PISTE, documentation en anglais.
 - [pylegifrance](https://github.com/pylegifrance/pylegifrance) - \[Gratuit\] \[Open source\] \[Inscription\] \[Python\] Fonctions Python prêtes à l'emploi pour chercher dans les codes, les lois et décrets ou la jurisprudence judiciaire via l'API Légifrance.
+- [pynsee](https://github.com/InseeFrLab/pynsee) - \[Gratuit\] \[Open source\] \[Inscription\] \[Python\] Paquet Python d'InseeFrLab pour les API de l'Insee, dont Sirene (recherche d'entreprises et d'établissements par critères) ; la partie Sirene exige une clé gratuite du portail API de l'Insee.
+- [python-epo-ops-client](https://github.com/ip-tools/python-epo-ops-client) - \[Gratuit\] \[Open source\] \[Inscription\] \[Python\] Client Python d'Open Patent Services (OEB) : bibliographie, familles, statut juridique et registre des brevets FR et EP ; clés OPS gratuites jusqu'à 4 Go par semaine, documentation en anglais.
 
 ### JavaScript et autres langages
 
+- [@socialgouv/fiches-travail-data](https://github.com/SocialGouv/fiches-travail-data) - \[Gratuit\] \[Open source\] \[JavaScript\] Paquet npm qui fournit en JSON les fiches pratiques du droit du travail du site travail-emploi.gouv.fr, republiées automatiquement ; documentation succincte en anglais.
 - [@socialgouv/fiches-vdd](https://github.com/SocialGouv/fiches-vdd) - \[Gratuit\] \[Open source\] \[JavaScript\] Paquet npm qui fournit en JSON les fiches Vos droits et démarches de Service-Public.fr, mises à jour chaque jour ; environ 500 Mo de données.
 - [dila-api-client](https://github.com/SocialGouv/dila-api-client) - \[Gratuit\] \[Open source\] \[Inscription\] \[JavaScript\] Client Node.js qui gère l'authentification OAuth et les appels à l'API Légifrance de la DILA.
+- [eurlex (R)](https://michalovadek.github.io/eurlex/) - \[Gratuit\] \[Open source\] Paquet R pour interroger EUR-Lex et le dépôt Cellar et récupérer actes, métadonnées et textes de l'UE sous forme de tableaux ; documentation en anglais.
 - [kali-data](https://github.com/SocialGouv/kali-data) - \[Gratuit\] \[Open source\] \[JavaScript\] Paquet npm qui rassemble en JSON les conventions collectives extraites de l'API DILA ; projet expérimental, réservé par ses auteurs à un usage interne.
 - [legi-data](https://github.com/SocialGouv/legi-data) - \[Gratuit\] \[Open source\] \[JavaScript\] Paquet npm qui fournit en JSON quatre codes (travail, sécurité sociale, rural, relations public-administration) avec une API TypeScript ; réservé par ses auteurs à un usage interne expérimental.
 - [Legifrance Integration (Obsidian)](https://github.com/carnetdethese/legifrance-integration) - \[Gratuit\] \[Open source\] \[Inscription\] Plugin Obsidian qui interroge l'API Légifrance, repère les textes et décisions cités dans vos notes et en conserve le texte ; identifiants PISTE requis.
@@ -120,6 +134,8 @@ Ressources pour brancher des assistants IA sur le droit français, entraîner ou
 - [EUR-Lex MCP Server](https://github.com/cyanheads/eur-lex-mcp-server) - \[Gratuit\] \[Open source\] \[IA\] \[JavaScript\] Serveur MCP qui permet à un assistant IA de chercher et lire les actes de l'UE et la jurisprudence de la CJUE sur EUR-Lex. Documentation en anglais.
 - [eurlex-mcp-server](https://github.com/Honeyfield-Org/eurlex-mcp-server) - \[Gratuit\] \[Open source\] \[IA\] \[JavaScript\] Serveur MCP sans clé d'API pour interroger EUR-Lex : textes consolidés, arrêts de la CJUE et mesures nationales de transposition, en français. Documentation en anglais.
 - [justicelibre](https://justicelibre.org/) - \[Gratuit\] \[IA\] Serveur MCP hébergé qui interroge la jurisprudence française et européenne (CEDH, CJUE), les codes et la doctrine administrative ; la recherche fonctionne sans compte.
+- [LibreJustice](https://librejustice.fr/) - \[Gratuit\] \[Open source\] \[Inscription\] \[IA\] Moteur de recherche libre reliant jurisprudence française et européenne et textes consolidés, interrogeable en ligne, par API (clé gratuite) ou par un serveur MCP.
+- [mcp-inpi-pi](https://github.com/guix77/mcp-inpi-pi) - \[Gratuit\] \[Open source\] \[Inscription\] \[IA\] \[JavaScript\] Serveur MCP non officiel qui cherche les marques françaises, de l'UE et internationales via l'API de l'INPI et fournit la classification de Nice ; compte API data.inpi.fr gratuit requis.
 - [mcp-server-legifrance](https://github.com/pylegifrance/mcp-server-legifrance) - \[Gratuit\] \[Open source\] \[Inscription\] \[IA\] \[Python\] Serveur MCP expérimental pour rechercher lois, articles de code et jurisprudence judiciaire ; il demande une clé délivrée par le Lab de dassignies.
 
 ### Modèles et embeddings
@@ -157,17 +173,23 @@ Outils de calcul de délais, d'indemnités, d'intérêts et de loyers. Les résu
 
 - [Calcul de l'intérêt légal (justice.fr)](https://www.justice.fr/fiche/calcul-interet-legal) - \[Gratuit\] Fiche qui donne les taux semestriels de l'intérêt légal et la formule pour calculer soi-même les intérêts dus ; ce n'est pas un calculateur automatique.
 - [Calcul de la révision du loyer (INC)](https://www.inc-conso.fr/content/logement/calculez-laugmentation-de-votre-loyer) - \[Gratuit\] Calcule la hausse annuelle autorisée d'un loyer d'habitation à partir de l'indice de référence des loyers publié par l'Insee, pour les indices publiés depuis 2005.
+- [Calculateur de délai d'appel en matière civile](https://www.simonnetavocat.fr/delai-pour-faire-appel-comment-le-calculer-automatiquement/) - \[Gratuit\] Calcule le dernier jour pour faire appel d'un jugement civil (un mois, quinze jours en référé) à partir de sa signification ; outil d'un cabinet d'avocats, à vérifier sur les textes.
 - [Calculateur de délais de procédure pénale](https://www.simonnetavocat.fr/calculateur-delais-procedure-penale/) - \[Gratuit\] Outil gratuit publié par un cabinet d'avocats qui calcule l'échéance de délais de procédure pénale et cite l'article applicable ; à contrôler sur les textes.
 - [Mon-entreprise (Urssaf)](https://mon-entreprise.urssaf.fr/simulateurs) - \[Gratuit\] \[Open source\] Simulateurs publics de cotisations et de revenus (salarié, indépendant, dirigeant) qui détaillent chaque étape du calcul ; le code est public.
 - [Simulateur de pension alimentaire (justice.fr)](https://www.justice.fr/simulateurs/pensions-alimentaire) - \[Gratuit\] Donne une estimation de la pension alimentaire selon les revenus, le nombre d'enfants et le mode de garde, résidence alternée comprise ; seul le juge fixe le montant.
+- [Simulateur des droits de succession](https://www.service-public.gouv.fr/simulateur/calcul/droits-succession) - \[Gratuit\] Simulateur officiel qui estime les droits de succession à payer selon le lien de parenté, la part reçue et les dettes du défunt, hors frais de notaire.
 - [Simulateurs du Code du travail numérique](https://code.travail.gouv.fr/outils) - \[Gratuit\] Estimations officielles de l'indemnité de licenciement, de la durée du préavis, de l'indemnité de rupture conventionnelle ou du salaire net.
 
 ## Outils publics et droit codé
 
 Services publics numériques et langages qui traduisent des règles juridiques en programmes.
 
+- [@socialgouv/modeles-social](https://github.com/SocialGouv/code-du-travail-numerique/tree/dev/packages/code-du-travail-modeles) - \[Gratuit\] \[Open source\] \[JavaScript\] Règles Publicodes des simulateurs du Code du travail numérique (préavis, indemnités de licenciement, de précarité, de départ à la retraite), avec des variantes par convention ; pas de README dédié.
 - [Catala](https://catala-lang.org/) - \[Gratuit\] \[Open source\] Langage de programmation de l'Inria qui annote un texte de loi avec sa traduction en code, pensé pour un travail en binôme juriste et développeur.
 - [Code du travail numérique](https://code.travail.gouv.fr/) - \[Gratuit\] \[Open source\] Service public qui répond aux questions de droit du travail en tenant compte de la convention collective applicable ; son code source est ouvert.
+- [Exemples Catala](https://github.com/CatalaLang/catala-examples) - \[Gratuit\] \[Open source\] Programmes Catala qui traduisent des textes français (allocations familiales, aides au logement, impôt sur le revenu) en code exécutable et testé ; documentation en anglais.
+- [LexImpact (Assemblée nationale)](https://leximpact.an.fr/) - \[Gratuit\] Simulateurs de l'Assemblée nationale, fondés sur OpenFisca, qui chiffrent l'effet de réformes fiscales et sociales (PLF, PLFSS) sur des foyers types ; impact budgétaire en accès restreint.
+- [Mlang](https://github.com/MLanguage/mlang) - \[Gratuit\] \[Open source\] Compilateur et interpréteur du langage M, dans lequel la DGFiP écrit le calcul de l'impôt sur le revenu ; permet d'exécuter les sources M publiées par la DGFiP. Documentation en anglais.
 - [OpenFisca-Core](https://github.com/openfisca/openfisca-core) - \[Gratuit\] \[Open source\] \[Python\] Moteur Python d'OpenFisca qui exécute des législations écrites en code pour simuler impôts et prestations ; base d'OpenFisca-France, documentation en anglais.
 - [OpenFisca-France](https://github.com/openfisca/openfisca-france) - \[Gratuit\] \[Open source\] \[Python\] Modèle du système socio-fiscal français écrit pour le moteur OpenFisca ; il calcule impôts et prestations et sert notamment à simuler des réformes.
 - [Publicodes](https://github.com/publicodes/publicodes) - \[Gratuit\] \[Open source\] \[JavaScript\] Langage déclaratif pour modéliser des règles de calcul (cotisations, aides) qui produit automatiquement l'explication de chaque résultat.
@@ -179,13 +201,19 @@ Formations et manuels pour les juristes qui veulent comprendre ou écrire du cod
 
 - [Apprendre à coder avec Python (FUN MOOC)](https://www.fun-mooc.fr/en/cours/apprendre-a-coder-avec-python/) - \[Gratuit\] MOOC francophone d'initiation à la programmation en Python, destiné aux débutants sans formation technique.
 - [CS50 for Lawyers](https://cs50.harvard.edu/law/) - \[Gratuit\] Cours de Harvard en anglais, à suivre à son rythme, qui initie les juristes à Python, SQL et aux enjeux juridiques des choix techniques.
+- [Guide juridique de l'open data](https://guides.data.gouv.fr/guides/guide-juridique) - \[Gratuit\] Guide de data.gouv.fr sur les obligations d'ouverture des administrations et les règles à respecter pour réutiliser des données publiques (licences, mention de la source).
+- [L'Atelier RGPD (MOOC de la CNIL)](https://www.cnil.fr/fr/comprendre-le-rgpd/le-mooc-de-la-cnil) - \[Gratuit\] \[Inscription\] MOOC gratuit de la CNIL en six modules (notions clés, principes, responsabilités, DPO, collectivités, travail) pour appliquer le RGPD, avec une attestation par module.
 - [Le livre Catala](https://book.catala-lang.org/fr/) - \[Gratuit\] \[Open source\] Manuel en ligne, disponible en français, qui montre comment passer d'un texte juridique à un programme Catala et comment juristes et développeurs y collaborent.
 
 ## Communautés, événements et veille
 
 Associations, institutions et médias pour suivre l'actualité du droit et de la legaltech.
 
+- [ADIJ](https://adij.legal/) - \[Gratuit\] Association qui réunit juristes et informaticiens autour du droit du numérique, avec des ateliers et des webinaires (série « Compliance numérique ») ; une partie est réservée aux adhérents.
 - [DINUM et Etalab](https://www.numerique.gouv.fr/) - \[Gratuit\] Direction interministérielle du numérique ; son département Etalab pilote data.gouv.fr et la politique d'ouverture des données et des codes sources publics.
+- [Juriconnexion](https://www.juriconnexion.fr/) - \[Gratuit\] Association des professionnels de l'information juridique : rendez-vous annuels, par exemple sur l'IA générative, et enquêtes sur le métier ; événements payants pour les non-adhérents.
+- [Le Monde du Droit, rubrique Intelligence artificielle](https://www.lemondedudroit.fr/mag/378-intelligence-artificielle.html) - \[Gratuit\] \[IA\] Rubrique d'actualité en accès libre sur l'IA juridique et les legaltechs : lancements d'outils, levées de fonds, positions des barreaux et programmes publics.
+- [LINC (laboratoire d'innovation de la CNIL)](https://linc.cnil.fr/) - \[Gratuit\] \[IA\] Laboratoire de la CNIL qui publie des articles, des cahiers et des expérimentations sur l'IA, les données et la vie privée, utiles pour la veille.
 - [Open Law](https://openlaw.fr/) - \[Gratuit\] Association qui anime des programmes collaboratifs entre juristes, institutions et legaltechs (IA et droit, open data, éthique des plateformes).
 - [Village de la Justice](https://www.village-justice.com/articles/) - \[Gratuit\] Média en accès libre pour les professions du droit : actualité par matière, tribunes de praticiens et offres d'emploi.
 
@@ -201,6 +229,7 @@ Autres listes de type awesome sur le droit, les données publiques ou la régula
 - [Awesome Legaltech](https://github.com/Vaquill-AI/awesome-legaltech) - \[Gratuit\] Liste internationale d'outils, de données et de ressources legaltech, à dominante américaine, maintenue par l'entreprise Vaquill AI qui y signale ses propres projets.
 - [Awesome OGD Switzerland](https://github.com/rnckp/awesome-ogd-switzerland) - \[Gratuit\] Portails, API et outils de données publiques ouvertes en Suisse ; liste généraliste qui n'est pas consacrée au droit.
 - [Awesome Responsible AI](https://github.com/AthenaCore/AwesomeResponsibleAI) - \[Gratuit\] \[IA\] Liste de cadres, normes, codes d'éthique et réglementations sur l'IA responsable, utile pour préparer la conformité au règlement européen sur l'IA. En anglais.
+- [Legal Text Analytics](https://github.com/Liquid-Legal-Institute/Legal-Text-Analytics) - \[Gratuit\] \[IA\] Liste de méthodes, bibliothèques, corpus et outils d'annotation pour analyser automatiquement des textes juridiques. En anglais.
 
 ## Projets archivés ou non maintenus
 
@@ -222,4 +251,4 @@ Les participants s'engagent à respecter le [code de conduite](CODE_OF_CONDUCT.m
 
 ## Licence du contenu
 
-Dans la limite permise par la loi, la personne qui maintient cette liste ([GitByHossam](https://github.com/GitByHossam)) renonce à tous ses droits sur son contenu, placé sous [CC0 1.0](LICENSE). Les scripts du dossier `scripts/` sont publiés sous [licence MIT](scripts/LICENSE). 
+Dans la limite permise par la loi, la personne qui maintient cette liste ([GitByHossam](https://github.com/GitByHossam)) renonce à tous ses droits sur son contenu, placé sous [CC0 1.0](LICENSE). Les scripts du dossier `scripts/` sont publiés sous [licence MIT](scripts/LICENSE).

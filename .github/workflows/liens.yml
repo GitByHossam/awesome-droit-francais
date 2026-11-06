@@ -44,6 +44,30 @@ jobs:
           output: rapport-liens.md
           fail: false
 
+      - name: Contrôler les URL candidates de A_VERIFIER.md (hors issue)
+        id: candidats
+        uses: lycheeverse/lychee-action@v2
+        with:
+          # Preuve HTTP pour des ressources qui ne sont pas encore dans la
+          # liste. Les échecs restent hors de l'issue hebdomadaire : ils ne
+          # figurent que dans le résumé de l'exécution (onglet Summary).
+          # --include-verbatim : les URL de A_VERIFIER.md sont écrites entre
+          #   accents graves ; sans cette option, lychee n'en trouve aucune.
+          # --verbose : ajoute au rapport les chaînes de redirection, utiles
+          #   pour choisir l'adresse canonique.
+          # Pas d'--accept 403,429 ici : seul un code 2xx vaut preuve ; un 403
+          #   d'un pare-feu se vérifie à la main dans un navigateur.
+          args: >-
+            --no-progress
+            --verbose
+            --include-verbatim
+            --max-retries 3
+            --timeout 30
+            A_VERIFIER.md
+          output: rapport-candidats.md
+          fail: false
+          failIfEmpty: false
+
       - name: Installer Python 3.12
         uses: actions/setup-python@v5
         with:
