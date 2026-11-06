@@ -301,6 +301,214 @@ ressources:
     statut: actif
     verifie_le: 2026-11-06
 
+  infocuria:
+    nom: "InfoCuria (CJUE)"
+    url: "https://infocuria.curia.europa.eu/"
+    categorie: sources-officielles
+    sous_categorie: null
+    description: "Moteur de recherche de la CJUE, refondu en janvier 2026, dans les arrêts, conclusions, ordonnances et résumés de la Cour de justice et du Tribunal, en français."
+    etiquettes: [gratuit]
+    licence: "Conditions de réutilisation de la CJUE"
+    type: site
+    depot_github: null
+    statut: actif
+    verifie_le: 2026-11-06
+
+  api-bodacc:
+    nom: "API BODACC"
+    url: "https://www.data.gouv.fr/dataservices/api-bulletin-officiel-des-annonces-civiles-et-commerciales-bodacc"
+    categorie: sources-officielles
+    sous_categorie: null
+    description: "Interrogez sans clé les annonces du BODACC (immatriculations, ventes de fonds, procédures collectives, dépôts de comptes) par SIREN, type d'avis ou date, via l'API Opendatasoft de la DILA."
+    etiquettes: [gratuit]
+    licence: "Licence Ouverte 2.0"
+    type: api
+    depot_github: null
+    statut: actif
+    verifie_le: 2026-11-06
+
+  decisions-autorite-concurrence:
+    nom: "Décisions de l'Autorité de la concurrence (open data)"
+    url: "https://www.data.gouv.fr/datasets/decisions-publiees-par-lautorite-de-la-concurrence-depuis-1988"
+    categorie: sources-officielles
+    sous_categorie: null
+    description: "Texte intégral des décisions contentieuses, avis, mesures conservatoires et décisions de concentration publiés depuis 1988, en français et en partie en anglais ; copie Parquet sur Hugging Face."
+    etiquettes: [gratuit]
+    licence: "Licence Ouverte 2.0"
+    type: donnees
+    depot_github: null
+    statut: actif
+    verifie_le: 2026-11-06
+
+  api-boamp:
+    nom: "API BOAMP"
+    url: "https://www.data.gouv.fr/datasets/api-boamp"
+    categorie: sources-officielles
+    sous_categorie: null
+    description: "Recherchez par programme les avis d'appel public à la concurrence et les avis d'attribution publiés au BOAMP, mis à jour deux fois par jour ; API Opendatasoft de la DILA en accès libre."
+    etiquettes: [gratuit]
+    licence: "Licence Ouverte 2.0"
+    type: api
+    depot_github: null
+    statut: actif
+    verifie_le: 2026-11-06
+
+  regafi:
+    nom: "Regafi.fr (ACPR)"
+    url: "https://www.regafi.fr/"
+    categorie: sources-officielles
+    sous_categorie: null
+    description: "Registre public de l'ACPR pour vérifier qu'une banque, un établissement de paiement, une entreprise d'investissement ou un assureur est autorisé en France, et pour quelles activités."
+    etiquettes: [gratuit]
+    licence: "Conditions d'utilisation du site"
+    type: site
+    depot_github: null
+    statut: actif
+    verifie_le: 2026-11-06
+
+  amf-sanctions:
+    nom: "Sanctions et transactions de l'AMF"
+    url: "https://www.amf-france.org/fr/sanctions-transactions/sanctions-et-transactions-accueil"
+    categorie: sources-officielles
+    sous_categorie: null
+    description: "Décisions de la Commission des sanctions de l'AMF et transactions homologuées, filtrables par thème, personne et date ; les montants affichés sont ceux fixés avant un éventuel recours."
+    etiquettes: [gratuit]
+    licence: "Conditions d'utilisation du site"
+    type: site
+    depot_github: null
+    statut: actif
+    verifie_le: 2026-11-06
+
+  avis-cada:
+    nom: "Avis et conseils de la CADA"
+    url: "https://www.data.gouv.fr/datasets/avis-et-conseils-de-la-cada"
+    categorie: sources-officielles
+    sous_categorie: null
+    description: "Téléchargez en CSV les avis et conseils anonymisés de la CADA sur l'accès aux documents administratifs, complets depuis fin 2012 ; recherche en ligne sur cada.data.gouv.fr."
+    etiquettes: [gratuit]
+    licence: "Licence Ouverte"
+    type: donnees
+    depot_github: null
+    statut: actif
+    verifie_le: 2026-11-06
+
+  opendata-hatvp:
+    nom: "Open data de la HATVP"
+    url: "https://www.hatvp.fr/open-data/"
+    categorie: sources-officielles
+    sous_categorie: null
+    description: "Téléchargez les déclarations d'intérêts et de patrimoine publiées des responsables publics (XML, CSV) et, sur une page voisine, le répertoire des représentants d'intérêts (JSON, CSV)."
+    etiquettes: [gratuit]
+    licence: "Licence Ouverte (Etalab)"
+    type: donnees
+    depot_github: null
+    statut: actif
+    verifie_le: 2026-11-06
+
+  defenseur-des-droits-juridique:
+    nom: "Documentation juridique du Défenseur des droits"
+    url: "https://juridique.defenseurdesdroits.fr/"
+    categorie: sources-officielles
+    sous_categorie: null
+    description: "Recherchez en texte intégral ou par numéro les décisions, avis et recommandations du Défenseur des droits, ainsi que les textes de la HALDE, de la CNDS et du Défenseur des enfants."
+    etiquettes: [gratuit]
+    licence: "Non précisée"
+    type: site
+    depot_github: null
+    statut: actif
+    verifie_le: 2026-11-06
+
+  api-carto-gpu:
+    nom: "API Carto, module Géoportail de l'urbanisme (IGN)"
+    url: "https://www.data.gouv.fr/dataservices/api-carto-module-geoportail-de-lurbanisme-gpu"
+    categorie: sources-officielles
+    sous_categorie: null
+    description: "Récupérez sans clé, à partir d'une géométrie ou d'un document, les zonages, prescriptions et servitudes d'utilité publique des PLU et cartes communales du Géoportail de l'urbanisme."
+    etiquettes: [gratuit, open-source]
+    licence: "Code CeCILL-B ; Licence Ouverte pour les données (à confirmer)"
+    type: api
+    depot_github: "IGNF/apicarto"
+    statut: actif
+    verifie_le: 2026-11-06
+
+  aida-ineris:
+    nom: "AIDA (INERIS)"
+    url: "https://aida.ineris.fr/"
+    categorie: sources-officielles
+    sous_categorie: null
+    description: "Consultez les textes français et européens sur les installations classées, l'eau, la nature et le littoral, dont la nomenclature ICPE et les arrêtés de prescriptions par rubrique."
+    etiquettes: [gratuit]
+    licence: "Non précisée"
+    type: site
+    depot_github: null
+    statut: actif
+    verifie_le: 2026-11-06
+
+  api-georisques:
+    nom: "API Géorisques"
+    url: "https://www.data.gouv.fr/dataservices/api-georisques"
+    categorie: sources-officielles
+    sous_categorie: null
+    description: "Interrogez par programme les risques naturels et technologiques recensés par Géorisques pour un lieu donné, dont le rapport de risques ; documentation Swagger, quotas d'appels."
+    etiquettes: [gratuit]
+    licence: "Licence Ouverte (à confirmer)"
+    type: api
+    depot_github: null
+    statut: actif
+    verifie_le: 2026-11-06
+
+  juricaf:
+    nom: "Juricaf"
+    url: "https://juricaf.org/"
+    categorie: sources-officielles
+    sous_categorie: null
+    description: "Recherchez dans les décisions des cours suprêmes de pays francophones, dont la France, et de juridictions comme la CCJA de l'OHADA, pour comparer les solutions retenues."
+    etiquettes: [gratuit, open-source]
+    licence: "Code AGPL-3.0 ; réutilisation des données non précisée"
+    type: site
+    depot_github: "AHJUCAF/juricaf"
+    statut: actif
+    verifie_le: 2026-11-06
+
+  hudoc-esc:
+    nom: "HUDOC-ESC (Charte sociale européenne)"
+    url: "https://hudoc.esc.coe.int/fre"
+    categorie: sources-officielles
+    sous_categorie: null
+    description: "Recherchez en français les décisions sur réclamations collectives et les conclusions du Comité européen des droits sociaux, qui contrôle l'application de la Charte sociale européenne."
+    etiquettes: [gratuit]
+    licence: "Conditions d'utilisation du site"
+    type: site
+    depot_github: null
+    statut: actif
+    verifie_le: 2026-11-06
+
+  joafe-opendata:
+    nom: "Annonces des associations (JOAFE), open data de la DILA"
+    url: "https://www.data.gouv.fr/datasets/associations-joafe"
+    categorie: sources-officielles
+    sous_categorie: null
+    description: "Téléchargez chaque semaine, en XML, les annonces du Journal officiel des associations et fondations d'entreprise parues depuis 1985, pour suivre la vie d'une association."
+    etiquettes: [gratuit]
+    licence: "Licence Ouverte"
+    type: donnees
+    depot_github: null
+    statut: actif
+    verifie_le: 2026-11-06
+
+  banatic:
+    nom: "BANATIC (base nationale sur l'intercommunalité)"
+    url: "https://www.banatic.interieur.gouv.fr/"
+    categorie: sources-officielles
+    sous_categorie: null
+    description: "Identifiez quel EPCI ou syndicat exerce une compétence sur une commune : périmètres, compétences et financement des groupements, exportables par région ou département."
+    etiquettes: [gratuit]
+    licence: "Licence Ouverte 2.0"
+    type: site
+    depot_github: null
+    statut: actif
+    verifie_le: 2026-11-06
+
   # ---------------------------------------------------------------------------
   # 2. Données juridiques réutilisables
   # ---------------------------------------------------------------------------
@@ -445,6 +653,71 @@ ressources:
     licence: "ODC-BY 1.0 (données) ; EUPL 1.2 (moteur)"
     type: donnees
     depot_github: "OpenTermsArchive/france-versions"
+    statut: actif
+    verifie_le: 2026-11-06
+
+  colibre:
+    nom: "colibre (ex-decp.info)"
+    url: "https://colibre.fr/"
+    categorie: donnees
+    sous_categorie: null
+    description: "Explorez, filtrez et téléchargez en Excel ou CSV les marchés publics attribués (DECP consolidées) par acheteur, titulaire ou objet ; l'API et le connecteur IA sont réservés aux abonnés."
+    etiquettes: [freemium, open-source]
+    licence: "GPL-3.0 ou ultérieure (code)"
+    type: outil
+    depot_github: "ColinMaudry/colibre"
+    statut: actif
+    verifie_le: 2026-11-06
+
+  conventions-collectives-siret:
+    nom: "Conventions collectives par entreprise (SIRET)"
+    url: "https://www.data.gouv.fr/datasets/liste-des-conventions-collectives-par-entreprise-siret"
+    categorie: donnees
+    sous_categorie: null
+    description: "Fichier du ministère du Travail qui associe chaque établissement (SIRET) aux conventions collectives (IDCC) déclarées en DSN, pour repérer la convention applicable ; décalage de quelques mois."
+    etiquettes: [gratuit]
+    licence: "Licence Ouverte 2.0"
+    type: donnees
+    depot_github: null
+    statut: actif
+    verifie_le: 2026-11-06
+
+  rappelconso:
+    nom: "RappelConso, rappels de produits"
+    url: "https://www.data.gouv.fr/datasets/rappelconso-v2-rappels-de-produits"
+    categorie: donnees
+    sous_categorie: null
+    description: "Fiches de rappel de produits publiées sur RappelConso par la DGCCRF et d'autres administrations, en CSV, JSON et API ; utile en droit de la consommation et de la sécurité des produits."
+    etiquettes: [gratuit]
+    licence: "Licence Ouverte 2.0"
+    type: donnees
+    depot_github: null
+    statut: actif
+    verifie_le: 2026-11-06
+
+  mediateurs-consommation:
+    nom: "Annuaire des médiateurs de la consommation"
+    url: "https://data.economie.gouv.fr/explore/assets/mediation-consommation-annuaire-des-mediateurs/"
+    categorie: donnees
+    sous_categorie: null
+    description: "Médiateurs de la consommation référencés par la CECMC, avec coordonnées, catégorie et secteurs couverts ; sert à trouver le médiateur compétent ou à vérifier un référencement."
+    etiquettes: [gratuit]
+    licence: "Licence Ouverte 2.0"
+    type: donnees
+    depot_github: null
+    statut: actif
+    verifie_le: 2026-11-06
+
+  natinf:
+    nom: "Nomenclature NATINF des infractions"
+    url: "https://www.data.gouv.fr/datasets/liste-des-infractions-en-vigueur-de-la-nomenclature-natinf"
+    categorie: donnees
+    sous_categorie: null
+    description: "Liste des infractions en vigueur tenue par le ministère de la Justice : code NATINF, libellé, nature et articles qui définissent et répriment chaque infraction ; mise à jour trimestrielle."
+    etiquettes: [gratuit]
+    licence: "Licence Ouverte 2.0"
+    type: donnees
+    depot_github: null
     statut: actif
     verifie_le: 2026-11-06
 
@@ -891,16 +1164,16 @@ ressources:
 
   inc-lettres-types:
     nom: "Lettres types de l'INC"
-    url: "https://www.inc-conso.fr/content/lettres-types-pour-regler-vos-litiges"
+    url: "https://www.inc-conso.fr/content/modeles-de-lettres-pour-regler-vos-litiges"
     categorie: modeles-documents
     sous_categorie: null
-    description: "Courriers prêts à compléter de l'Institut national de la consommation pour les litiges courants (banque, assurance, logement)."
+    description: "Modèles de lettres de l'Institut national de la consommation pour les litiges courants (banque, assurance, logement, santé), chacun avec un rappel des règles applicables."
     etiquettes: [gratuit]
     licence: "Conditions d'utilisation du site"
     type: site
     depot_github: null
     statut: actif
-    verifie_le: 2026-11-03
+    verifie_le: 2026-11-06
 
   docassemble:
     nom: "Docassemble"
@@ -928,6 +1201,19 @@ ressources:
     statut: actif
     verifie_le: 2026-11-02
 
+  pia-cnil:
+    nom: "Logiciel PIA (CNIL)"
+    url: "https://www.cnil.fr/fr/outil-pia-telechargez-et-installez-le-logiciel-de-la-cnil"
+    categorie: modeles-documents
+    sous_categorie: null
+    description: "Logiciel libre de la CNIL qui guide la conduite et la rédaction d'une analyse d'impact relative à la protection des données (AIPD), avec des modèles d'analyse réutilisables."
+    etiquettes: [gratuit, open-source]
+    licence: "GPL-3.0"
+    type: outil
+    depot_github: "LINCnil/pia"
+    statut: actif
+    verifie_le: 2026-11-06
+
   # ---------------------------------------------------------------------------
   # 6. Calculateurs et simulateurs
   # ---------------------------------------------------------------------------
@@ -947,7 +1233,7 @@ ressources:
 
   justice-pension-alimentaire:
     nom: "Simulateur de pension alimentaire (justice.fr)"
-    url: "https://www.justice.fr/simulateurs/pensions-alimentaire"
+    url: "https://www.justice.fr/fiche/simulateur-calcul-pension-alimentaire"
     categorie: calculateurs
     sous_categorie: null
     description: "Donne une estimation de la pension alimentaire selon les revenus, le nombre d'enfants et le mode de garde, résidence alternée comprise ; seul le juge fixe le montant."
@@ -956,7 +1242,7 @@ ressources:
     type: outil
     depot_github: null
     statut: actif
-    verifie_le: 2026-11-03
+    verifie_le: 2026-11-06
 
   justice-interet-legal:
     nom: "Calcul de l'intérêt légal (justice.fr)"
@@ -973,7 +1259,7 @@ ressources:
 
   inc-revision-loyer:
     nom: "Calcul de la révision du loyer (INC)"
-    url: "https://www.inc-conso.fr/content/logement/calculez-laugmentation-de-votre-loyer"
+    url: "https://www.inc-conso.fr/content/calculez-laugmentation-de-votre-loyer-0"
     categorie: calculateurs
     sous_categorie: null
     description: "Calcule la hausse annuelle autorisée d'un loyer d'habitation à partir de l'indice de référence des loyers publié par l'Insee, pour les indices publiés depuis 2005."
@@ -982,7 +1268,7 @@ ressources:
     type: outil
     depot_github: null
     statut: actif
-    verifie_le: 2026-11-03
+    verifie_le: 2026-11-06
 
   calculateur-delais-penal:
     nom: "Calculateur de délais de procédure pénale"
@@ -1029,6 +1315,19 @@ ressources:
     categorie: calculateurs
     sous_categorie: null
     description: "Calcule le dernier jour pour faire appel d'un jugement civil (un mois, quinze jours en référé) à partir de sa signification ; outil d'un cabinet d'avocats, à vérifier sur les textes."
+    etiquettes: [gratuit]
+    licence: "Conditions d'utilisation du site"
+    type: outil
+    depot_github: null
+    statut: actif
+    verifie_le: 2026-11-06
+
+  simulateur-aide-juridictionnelle:
+    nom: "Simulateur d'aide juridictionnelle"
+    url: "https://www.aidejuridictionnelle.justice.fr/simulateur"
+    categorie: calculateurs
+    sous_categorie: null
+    description: "Simulateur du ministère de la Justice qui estime le droit à l'aide juridictionnelle et son taux de prise en charge selon les ressources et le patrimoine du foyer."
     etiquettes: [gratuit]
     licence: "Conditions d'utilisation du site"
     type: outil
@@ -1170,6 +1469,45 @@ ressources:
     statut: actif
     verifie_le: 2026-11-06
 
+  envergo:
+    nom: "EnvErgo"
+    url: "https://envergo.beta.gouv.fr/"
+    categorie: droit-code
+    sous_categorie: null
+    description: "Simulez sans compte si un projet de construction ou d'aménagement relève de la loi sur l'eau, de Natura 2000 ou de l'évaluation environnementale ; résultat indicatif."
+    etiquettes: [gratuit, open-source]
+    licence: "MIT"
+    type: outil
+    depot_github: "MTES-MCT/envergo"
+    statut: actif
+    verifie_le: 2026-11-06
+
+  egapro:
+    nom: "Egapro (index de l'égalité professionnelle)"
+    url: "https://egapro.travail.gouv.fr/"
+    categorie: droit-code
+    sous_categorie: null
+    description: "Service du ministère du Travail pour calculer, déclarer et consulter l'index de l'égalité femmes-hommes des entreprises ; refonte en cours pour la directive (UE) 2023/970."
+    etiquettes: [gratuit, open-source]
+    licence: "Apache 2.0"
+    type: outil
+    depot_github: "SocialGouv/egapro"
+    statut: actif
+    verifie_le: 2026-11-06
+
+  dvf-explorateur:
+    nom: "Explorateur DVF (valeurs foncières)"
+    url: "https://explore.data.gouv.fr/fr/immobilier"
+    categorie: droit-code
+    sous_categorie: null
+    description: "Carte et tableaux des ventes immobilières des cinq dernières années (DVF, DGFiP) à la parcelle, avec export ; repère de prix, hors Alsace-Moselle et Mayotte. Réidentification interdite."
+    etiquettes: [gratuit, open-source]
+    licence: "MIT (code) ; données DVF sous conditions de réutilisation propres"
+    type: outil
+    depot_github: "datagouv/explore.data.gouv.fr"
+    statut: actif
+    verifie_le: 2026-11-06
+
   # ---------------------------------------------------------------------------
   # 8. Apprendre
   # ---------------------------------------------------------------------------
@@ -1235,6 +1573,32 @@ ressources:
     etiquettes: [gratuit]
     licence: "Non précisée"
     type: site
+    depot_github: null
+    statut: actif
+    verifie_le: 2026-11-06
+
+  fiches-ia-cnil:
+    nom: "Fiches pratiques IA de la CNIL"
+    url: "https://www.cnil.fr/fr/les-fiches-pratiques-ia"
+    categorie: apprendre
+    sous_categorie: null
+    description: "Recommandations de la CNIL pour développer un système d'IA conforme au RGPD : base légale, intérêt légitime, annotation, sécurité, statut des modèles."
+    etiquettes: [gratuit, ia]
+    licence: "Conditions d'utilisation du site"
+    type: site
+    depot_github: null
+    statut: actif
+    verifie_le: 2026-11-06
+
+  objectif-ia:
+    nom: "Objectif IA"
+    url: "https://openclassrooms.com/fr/courses/6417031-objectif-ia-initiez-vous-a-l-intelligence-artificielle"
+    categorie: apprendre
+    sous_categorie: null
+    description: "Cours gratuit d'initiation à l'IA de l'Institut Montaigne et d'OpenClassrooms, sans prérequis, pour comprendre le fonctionnement des outils d'IA avant de les utiliser en droit."
+    etiquettes: [gratuit, inscription, ia]
+    licence: "Non précisée"
+    type: formation
     depot_github: null
     statut: actif
     verifie_le: 2026-11-06
@@ -1328,6 +1692,19 @@ ressources:
     sous_categorie: null
     description: "Rubrique d'actualité en accès libre sur l'IA juridique et les legaltechs : lancements d'outils, levées de fonds, positions des barreaux et programmes publics."
     etiquettes: [gratuit, ia]
+    licence: "Conditions d'utilisation du site"
+    type: site
+    depot_github: null
+    statut: actif
+    verifie_le: 2026-11-06
+
+  pibd:
+    nom: "PIBD (INPI)"
+    url: "https://www.inpi.fr/ressources/propriete-intellectuelle/pibd-propriete-industrielle-bulletin-documentaire"
+    categorie: communautes
+    sous_categorie: null
+    description: "Bulletin documentaire gratuit de l'INPI, publié tous les quinze jours : actualité législative, jurisprudence et doctrine en propriété industrielle, en France et à l'étranger."
+    etiquettes: [gratuit]
     licence: "Conditions d'utilisation du site"
     type: site
     depot_github: null
@@ -1575,3 +1952,16 @@ ressources:
     depot_github: "GendarmerieNationale/LETHE"
     statut: non-maintenu
     verifie_le: 2026-11-02
+
+  guide-rgpd-developpeur:
+    nom: "Guide RGPD du développeur (CNIL)"
+    url: "https://www.cnil.fr/fr/technologies/guide-rgpd-du-developpeur"
+    categorie: archives
+    sous_categorie: null
+    description: "Fiches de la CNIL pour intégrer le RGPD dans un projet logiciel (minimisation, sécurité, traceurs, durées de conservation, droits), avec extraits de code ; dernière révision fin 2021."
+    etiquettes: [gratuit, open-source, non-maintenu]
+    licence: "GPL-3.0"
+    type: formation
+    depot_github: "LINCnil/Guide-RGPD-du-developpeur"
+    statut: non-maintenu
+    verifie_le: 2026-11-06
